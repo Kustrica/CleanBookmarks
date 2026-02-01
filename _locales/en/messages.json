@@ -1,0 +1,23 @@
+{
+  "extensionName": {
+    "message": "Favicon Bookmarks",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Automatically hides bookmark titles (showing only the icon) if the name is left empty.",
+    "description": "Description of the extension"
+  },
+  "optionsTitle": {
+    "message": "Options",
+    "description": "Title of the options page"
+  },
+  "saved": {
+    "message": "Saved"
+  },
+  "forceHideBtn": {
+    "message": "Hide"
+  },
+  "hiddenMsg": {
+    "message": "Hidden"
+  }
+}

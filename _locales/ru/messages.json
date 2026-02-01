@@ -1,0 +1,23 @@
+{
+  "extensionName": {
+    "message": "Favicon Bookmarks",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Автоматически скрывает названия закладок (показывая только иконку), если имя оставлено пустым.",
+    "description": "Description of the extension"
+  },
+  "optionsTitle": {
+    "message": "Настройки",
+    "description": "Title of the options page"
+  },
+  "saved": {
+    "message": "Сохранено"
+  },
+  "forceHideBtn": {
+    "message": "Скрыть"
+  },
+  "hiddenMsg": {
+    "message": "Спрятано"
+  }
+}

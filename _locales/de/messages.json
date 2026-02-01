@@ -1,0 +1,23 @@
+{
+  "extensionName": {
+    "message": "Favicon Bookmarks",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Verbirgt automatisch Lesezeichen-Titel (zeigt nur das Symbol), wenn der Name leer gelassen wird.",
+    "description": "Description of the extension"
+  },
+  "optionsTitle": {
+    "message": "Einstellungen",
+    "description": "Title of the options page"
+  },
+  "saved": {
+    "message": "Gespeichert"
+  },
+  "forceHideBtn": {
+    "message": "Ausblenden"
+  },
+  "hiddenMsg": {
+    "message": "Ausgeblendet"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "extensionName": {
+    "message": "Favicon Bookmarks",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "이름이 비어 있으면 북마크 제목을 자동으로 숨깁니다(아이콘만 표시).",
+    "description": "Description of the extension"
+  },
+  "optionsTitle": {
+    "message": "설정",
+    "description": "Title of the options page"
+  },
+  "saved": {
+    "message": "저장됨"
+  },
+  "forceHideBtn": {
+    "message": "숨기기"
+  },
+  "hiddenMsg": {
+    "message": "숨겨짐"
+  }
+}

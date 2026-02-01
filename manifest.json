@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extensionName__",
+  "version": "1.0",
+  "description": "__MSG_extensionDescription__",
+  "author": "Kustrica (Telegram: @kustric)",
+  "homepage_url": "https://t.me/kustric",
+  "default_locale": "en",
+  "permissions": [
+    "bookmarks",
+    "storage"
+  ],
+  "action": {
+    "default_title": "Favicon Bookmarks",
+    "default_icon": "icons/main-64.png"
+  },
+  "icons": {
+    "64": "icons/main-64.png"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "faviconbookmarks@user.addon",
+      "strict_min_version": "109.0"
+    }
+  }
+}

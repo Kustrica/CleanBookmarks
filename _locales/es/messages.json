@@ -1,0 +1,23 @@
+{
+  "extensionName": {
+    "message": "Favicon Bookmarks",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Oculta automáticamente los títulos de los marcadores (mostrando solo el icono) si el nombre se deja vacío.",
+    "description": "Description of the extension"
+  },
+  "optionsTitle": {
+    "message": "Configuración",
+    "description": "Title of the options page"
+  },
+  "saved": {
+    "message": "Guardado"
+  },
+  "forceHideBtn": {
+    "message": "Ocultar"
+  },
+  "hiddenMsg": {
+    "message": "Oculto"
+  }
+}

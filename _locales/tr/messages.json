@@ -1,0 +1,23 @@
+{
+  "extensionName": {
+    "message": "Favicon Bookmarks",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Ad boş bırakılırsa yer imi başlıklarını otomatik olarak gizler (yalnızca simgeyi gösterir).",
+    "description": "Description of the extension"
+  },
+  "optionsTitle": {
+    "message": "Ayarlar",
+    "description": "Title of the options page"
+  },
+  "saved": {
+    "message": "Kaydedildi"
+  },
+  "forceHideBtn": {
+    "message": "Gizle"
+  },
+  "hiddenMsg": {
+    "message": "Gizlendi"
+  }
+}

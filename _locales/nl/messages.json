@@ -1,0 +1,23 @@
+{
+  "extensionName": {
+    "message": "Favicon Bookmarks",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Verbergt automatisch bladwijzertitels (toont alleen het pictogram) als de naam leeg is.",
+    "description": "Description of the extension"
+  },
+  "optionsTitle": {
+    "message": "Instellingen",
+    "description": "Title of the options page"
+  },
+  "saved": {
+    "message": "Opgeslagen"
+  },
+  "forceHideBtn": {
+    "message": "Verbergen"
+  },
+  "hiddenMsg": {
+    "message": "Verborgen"
+  }
+}

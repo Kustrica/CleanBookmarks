@@ -1,0 +1,23 @@
+{
+  "extensionName": {
+    "message": "Favicon Bookmarks",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "Automatycznie ukrywa tytuły zakładek (pokazując tylko ikonę), jeśli nazwa jest pusta.",
+    "description": "Description of the extension"
+  },
+  "optionsTitle": {
+    "message": "Ustawienia",
+    "description": "Title of the options page"
+  },
+  "saved": {
+    "message": "Zapisano"
+  },
+  "forceHideBtn": {
+    "message": "Ukryj"
+  },
+  "hiddenMsg": {
+    "message": "Ukryto"
+  }
+}

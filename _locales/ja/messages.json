@@ -1,0 +1,23 @@
+{
+  "extensionName": {
+    "message": "Favicon Bookmarks",
+    "description": "Name of the extension"
+  },
+  "extensionDescription": {
+    "message": "名前が空の場合、ブックマークのタイトルを自動的に非表示にします（アイコンのみ表示）。",
+    "description": "Description of the extension"
+  },
+  "optionsTitle": {
+    "message": "設定",
+    "description": "Title of the options page"
+  },
+  "saved": {
+    "message": "保存しました"
+  },
+  "forceHideBtn": {
+    "message": "非表示"
+  },
+  "hiddenMsg": {
+    "message": "非表示にしました"
+  }
+}
