@@ -19,5 +19,8 @@
   },
   "hiddenMsg": {
     "message": "Gizlendi"
+  },
+  "addBookmarkMenu": {
+    "message": "Yer imi ekle"
   }
 }

@@ -19,5 +19,8 @@
   },
   "hiddenMsg": {
     "message": "Masqué"
+  },
+  "addBookmarkMenu": {
+    "message": "Ajouter un marque-page"
   }
 }

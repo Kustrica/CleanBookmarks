@@ -2,17 +2,12 @@ if (typeof browser === "undefined") {
     var browser = chrome;
 }
 
-// background.js
-
-// The invisible character (Zero Width Space)
 const INVISIBLE_CHAR = "\u200B";
 
-// Helper to clean strings for comparison (remove protocol, www, trailing slash)
+// Normalize strings for URL-like comparison
 function normalizeString(str) {
     if (!str) return "";
     try {
-        // If it looks like a URL, parse it
-        // Add protocol if missing to satisfy URL constructor
         let urlStr = str;
         if (!urlStr.startsWith('http')) {
             urlStr = 'http://' + urlStr;
@@ -21,15 +16,13 @@ function normalizeString(str) {
         let hostname = url.hostname.replace(/^www\./, '');
         let path = url.pathname;
         if (path.endsWith('/')) path = path.slice(0, -1);
-        
-        // Return domain + path (e.g. google.com or google.com/maps)
         return hostname + path + url.search;
     } catch (e) {
-        // Fallback: just simple strip
         return str.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '');
     }
 }
 
+// Read enabled flag from storage
 async function isEnabled() {
     const data = await browser.storage.local.get({ enabled: true });
     return data.enabled;
@@ -37,6 +30,7 @@ async function isEnabled() {
 
 const ADD_CURRENT_PAGE_MENU_ID = "add_current_page_to_folder";
 
+// Read active tab title and url
 async function getActiveTabInfo() {
     try {
         const tabs = await browser.tabs.query({ active: true, currentWindow: true });
@@ -48,6 +42,7 @@ async function getActiveTabInfo() {
     }
 }
 
+// Resolve a bookmark folder id from a bookmark node or folder
 async function resolveBookmarkParentId(bookmarkId) {
     try {
         const results = await browser.bookmarks.get(bookmarkId);
@@ -59,6 +54,7 @@ async function resolveBookmarkParentId(bookmarkId) {
     }
 }
 
+// Create a bookmark for the active tab
 async function createBookmarkFromActiveTab(parentId) {
     if (!(await isEnabled())) return;
     const tabInfo = await getActiveTabInfo();
@@ -70,6 +66,7 @@ async function createBookmarkFromActiveTab(parentId) {
     } catch (e) {}
 }
 
+// Register bookmark context menu entry
 function registerContextMenus() {
     if (!browser.contextMenus) return;
     browser.contextMenus.removeAll().then(() => {
@@ -81,26 +78,19 @@ function registerContextMenus() {
     }).catch(() => {});
 }
 
+// Update bookmark titles based on current rules
 async function updateBookmarkIfNeeded(id, bookmark) {
     if (!(await isEnabled())) return;
 
     const title = bookmark.title;
-    
-    // 1. If title is empty/whitespace -> replace with invisible char
     if (!title || title.trim() === "") {
         console.log("Empty title found, fixing:", bookmark.url);
         browser.bookmarks.update(id, { title: INVISIBLE_CHAR }).catch(() => {});
         return;
     }
-    
-    // 2. Check if title is suspiciously similar to the URL
-    // e.g. title="https://google.com/" and url="https://google.com/"
-    // or title="google.com" and url="https://www.google.com/"
     if (bookmark.url) {
         const normTitle = normalizeString(title);
         const normUrl = normalizeString(bookmark.url);
-        
-        // Also check raw equality just in case
         if (title === bookmark.url || normTitle === normUrl) {
              console.log("URL-like title found, fixing:", title);
              browser.bookmarks.update(id, { title: INVISIBLE_CHAR }).catch(() => {});
@@ -108,22 +98,19 @@ async function updateBookmarkIfNeeded(id, bookmark) {
     }
 }
 
-// Recursive function to scan all bookmark nodes
+// Scan all bookmark nodes recursively
 function scanBookmarks(nodes) {
     for (let node of nodes) {
         if (node.url) {
-            // It's a bookmark
             updateBookmarkIfNeeded(node.id, node);
         }
         
         if (node.children) {
-            // It's a folder
             scanBookmarks(node.children);
         }
     }
 }
 
-// 1. Scan on startup
 browser.runtime.onStartup.addListener(async () => {
     registerContextMenus();
     if (await isEnabled()) {
@@ -131,7 +118,6 @@ browser.runtime.onStartup.addListener(async () => {
     }
 });
 
-// 2. Scan on install/update (so it works immediately after loading extension)
 browser.runtime.onInstalled.addListener(async () => {
     console.log("FaviconBookmarks Installed/Updated - Scanning...");
     registerContextMenus();

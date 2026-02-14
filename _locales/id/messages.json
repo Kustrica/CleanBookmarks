@@ -19,5 +19,8 @@
   },
   "hiddenMsg": {
     "message": "Disembunyikan"
+  },
+  "addBookmarkMenu": {
+    "message": "Tambahkan bookmark"
   }
 }

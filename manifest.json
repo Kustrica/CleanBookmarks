@@ -13,11 +13,11 @@
     "storage"
   ],
   "action": {
-    "default_title": "Favicon Bookmarks",
-    "default_icon": "icons/main-64.png"
+    "default_title": "Clean Bookmarks",
+    "default_icon": "icons/CleanBookmark-200.png"
   },
   "icons": {
-    "64": "icons/main-64.png"
+    "200": "icons/CleanBookmark-200.png"
   },
   "options_ui": {
     "page": "options.html",
@@ -28,8 +28,11 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "faviconbookmarks@user.addon",
-      "strict_min_version": "109.0"
+      "id": "faviconbookmarks@kustrica.addon",
+      "strict_min_version": "109.0",
+            "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   }
 }
