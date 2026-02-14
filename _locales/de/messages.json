@@ -19,5 +19,9 @@
   },
   "hiddenMsg": {
     "message": "Ausgeblendet"
+  },
+  "addBookmarkMenu": {
+    "message": "Lesezeichen hinzufügen"
   }
+   
 }

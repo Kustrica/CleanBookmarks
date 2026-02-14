@@ -19,5 +19,8 @@
   },
   "hiddenMsg": {
     "message": "Verborgen"
+  },
+  "addBookmarkMenu": {
+    "message": " bladwijzer toevoegen"
   }
 }

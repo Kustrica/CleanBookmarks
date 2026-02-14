@@ -19,5 +19,8 @@
   },
   "hiddenMsg": {
     "message": "Спрятано"
+  },
+  "addBookmarkMenu": {
+    "message": "Добавить закладку"
   }
 }

@@ -19,5 +19,8 @@
   },
   "hiddenMsg": {
     "message": "Oculto"
+  },
+  "addBookmarkMenu": {
+    "message": "Añadir marcador"
   }
 }

@@ -35,6 +35,52 @@ async function isEnabled() {
     return data.enabled;
 }
 
+const ADD_CURRENT_PAGE_MENU_ID = "add_current_page_to_folder";
+
+async function getActiveTabInfo() {
+    try {
+        const tabs = await browser.tabs.query({ active: true, currentWindow: true });
+        const tab = tabs && tabs[0];
+        if (!tab || !tab.url) return null;
+        return { title: tab.title || tab.url, url: tab.url };
+    } catch (e) {
+        return null;
+    }
+}
+
+async function resolveBookmarkParentId(bookmarkId) {
+    try {
+        const results = await browser.bookmarks.get(bookmarkId);
+        if (!results || results.length === 0) return null;
+        const node = results[0];
+        return node.url ? node.parentId : node.id;
+    } catch (e) {
+        return null;
+    }
+}
+
+async function createBookmarkFromActiveTab(parentId) {
+    if (!(await isEnabled())) return;
+    const tabInfo = await getActiveTabInfo();
+    if (!tabInfo) return;
+    const payload = { title: tabInfo.title, url: tabInfo.url };
+    if (parentId) payload.parentId = parentId;
+    try {
+        await browser.bookmarks.create(payload);
+    } catch (e) {}
+}
+
+function registerContextMenus() {
+    if (!browser.contextMenus) return;
+    browser.contextMenus.removeAll().then(() => {
+        browser.contextMenus.create({
+            id: ADD_CURRENT_PAGE_MENU_ID,
+            title: browser.i18n.getMessage("addBookmarkMenu") || "Add Bookmark",
+            contexts: ["bookmark"]
+        });
+    }).catch(() => {});
+}
+
 async function updateBookmarkIfNeeded(id, bookmark) {
     if (!(await isEnabled())) return;
 
@@ -79,6 +125,7 @@ function scanBookmarks(nodes) {
 
 // 1. Scan on startup
 browser.runtime.onStartup.addListener(async () => {
+    registerContextMenus();
     if (await isEnabled()) {
         browser.bookmarks.getTree().then(scanBookmarks);
     }
@@ -87,6 +134,7 @@ browser.runtime.onStartup.addListener(async () => {
 // 2. Scan on install/update (so it works immediately after loading extension)
 browser.runtime.onInstalled.addListener(async () => {
     console.log("FaviconBookmarks Installed/Updated - Scanning...");
+    registerContextMenus();
     if (await isEnabled()) {
         browser.bookmarks.getTree().then(scanBookmarks);
     }
@@ -97,6 +145,14 @@ browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
         browser.bookmarks.getTree().then(scanBookmarks);
     }
 });
+
+if (browser.contextMenus && browser.contextMenus.onClicked) {
+    browser.contextMenus.onClicked.addListener(async (info) => {
+        if (info.menuItemId !== ADD_CURRENT_PAGE_MENU_ID) return;
+        const parentId = info.bookmarkId ? await resolveBookmarkParentId(info.bookmarkId) : null;
+        createBookmarkFromActiveTab(parentId);
+    });
+}
 
 browser.bookmarks.onCreated.addListener((id, bookmark) => {
     updateBookmarkIfNeeded(id, bookmark);

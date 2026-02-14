@@ -19,5 +19,8 @@
   },
   "hiddenMsg": {
     "message": "Схавана"
+  },
+  "addBookmarkMenu": {
+    "message": "Дадаць закладку"
   }
 }

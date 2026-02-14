@@ -19,5 +19,8 @@
   },
   "hiddenMsg": {
     "message": "非表示にしました"
+  },
+  "addBookmarkMenu": {
+    "message": "ブックマークを追加"
   }
 }

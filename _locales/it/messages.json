@@ -19,5 +19,8 @@
   },
   "hiddenMsg": {
     "message": "Nascosto"
+  },
+  "addBookmarkMenu": {
+    "message": "Aggiungi segnalibro"
   }
 }
