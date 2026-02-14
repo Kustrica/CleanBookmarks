@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "Favicon Bookmarks",
+    "message": "Clean Bookmarks",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "如果名称留空，自动隐藏书签标题（仅显示图标）。",
+    "message": "隐藏空白或类似 URL 的书签标题，并通过文件夹菜单快速添加书签。",
     "description": "Description of the extension"
   },
   "optionsTitle": {
@@ -19,5 +19,8 @@
   },
   "hiddenMsg": {
     "message": "已隐藏"
+  },
+  "addBookmarkMenu": {
+    "message": "添加书签"
   }
 }

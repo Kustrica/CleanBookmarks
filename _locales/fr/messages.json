@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "Favicon Bookmarks",
+    "message": "Clean Bookmarks",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "Masque automatiquement les titres des favoris (affichant uniquement l'icône) si le nom est laissé vide.",
+    "message": "Masque les titres de favoris vides ou semblables à une URL et ajoute rapidement des favoris via le menu du dossier.",
     "description": "Description of the extension"
   },
   "optionsTitle": {

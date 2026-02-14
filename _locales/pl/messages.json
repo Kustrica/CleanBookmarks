@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "Favicon Bookmarks",
+    "message": "Clean Bookmarks",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "Automatycznie ukrywa tytuły zakładek (pokazując tylko ikonę), jeśli nazwa jest pusta.",
+    "message": "Ukrywa puste lub podobne do URL tytuły zakładek i szybko dodaje zakładki z menu folderu.",
     "description": "Description of the extension"
   },
   "optionsTitle": {

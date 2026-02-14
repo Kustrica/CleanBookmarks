@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "Favicon Bookmarks",
+    "message": "Clean Bookmarks",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "Verbergt automatisch bladwijzertitels (toont alleen het pictogram) als de naam leeg is.",
+    "message": "Verbergt lege of URL-achtige bladwijzertitels en voegt bladwijzers snel toe via het mapmenu.",
     "description": "Description of the extension"
   },
   "optionsTitle": {

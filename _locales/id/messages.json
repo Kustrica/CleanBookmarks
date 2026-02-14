@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "Favicon Bookmarks",
+    "message": "Clean Bookmarks",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "Secara otomatis menyembunyikan judul bookmark (hanya menampilkan ikon) jika nama dibiarkan kosong.",
+    "message": "Menyembunyikan judul bookmark kosong atau mirip URL dan menambahkan bookmark dengan cepat melalui menu folder.",
     "description": "Description of the extension"
   },
   "optionsTitle": {

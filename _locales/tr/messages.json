@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "Favicon Bookmarks",
+    "message": "Clean Bookmarks",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "Ad boş bırakılırsa yer imi başlıklarını otomatik olarak gizler (yalnızca simgeyi gösterir).",
+    "message": "Boş veya URL benzeri yer imi başlıklarını gizler ve klasör menüsünden hızlıca yer imi ekler.",
     "description": "Description of the extension"
   },
   "optionsTitle": {

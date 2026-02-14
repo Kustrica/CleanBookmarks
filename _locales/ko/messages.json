@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "Favicon Bookmarks",
+    "message": "Clean Bookmarks",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "이름이 비어 있으면 북마크 제목을 자동으로 숨깁니다(아이콘만 표시).",
+    "message": "비어 있거나 URL처럼 보이는 북마크 제목을 숨기고 폴더 메뉴에서 빠르게 추가합니다.",
     "description": "Description of the extension"
   },
   "optionsTitle": {

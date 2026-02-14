@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "Favicon Bookmarks",
+    "message": "Clean Bookmarks",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "يخفي عناوين الإشارات المرجعية تلقائيًا (يظهر الرمز فقط) إذا تم ترك الاسم فارغًا.",
+    "message": "يخفي عناوين الإشارات المرجعية الفارغة أو الشبيهة بعنوان URL ويضيف إشارات مرجعية بسرعة عبر قائمة المجلد.",
     "description": "Description of the extension"
   },
   "optionsTitle": {

@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "Favicon Bookmarks",
+    "message": "Clean Bookmarks",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "Автоматически скрывает названия закладок (показывая только иконку), если имя оставлено пустым.",
+    "message": "Скрывает пустые или похожие на URL названия закладок и быстро добавляет закладки через меню папки.",
     "description": "Description of the extension"
   },
   "optionsTitle": {

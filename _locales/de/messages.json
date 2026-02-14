@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "Favicon Bookmarks",
+    "message": "Clean Bookmarks",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "Verbirgt automatisch Lesezeichen-Titel (zeigt nur das Symbol), wenn der Name leer gelassen wird.",
+    "message": "Blendet leere oder URL-ähnliche Lesezeichen-Titel aus und fügt Lesezeichen schnell über das Ordner-Menü hinzu.",
     "description": "Description of the extension"
   },
   "optionsTitle": {

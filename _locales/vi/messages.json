@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "Favicon Bookmarks",
+    "message": "Clean Bookmarks",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "Tự động ẩn tiêu đề dấu trang (chỉ hiển thị biểu tượng) nếu tên bị bỏ trống.",
+    "message": "Ẩn tiêu đề dấu trang trống hoặc giống URL và thêm dấu trang nhanh qua menu thư mục.",
     "description": "Description of the extension"
   },
   "optionsTitle": {
@@ -19,5 +19,8 @@
   },
   "hiddenMsg": {
     "message": "Đã ẩn"
+  },
+  "addBookmarkMenu": {
+    "message": "Thêm dấu trang"
   }
 }

@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "Favicon Bookmarks",
+    "message": "Clean Bookmarks",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "如果名稱留空，自動隱藏書籤標題（僅顯示圖示）。",
+    "message": "隱藏空白或類似 URL 的書籤標題，並透過資料夾選單快速新增書籤。",
     "description": "Description of the extension"
   },
   "optionsTitle": {

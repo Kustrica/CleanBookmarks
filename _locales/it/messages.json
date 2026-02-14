@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "Favicon Bookmarks",
+    "message": "Clean Bookmarks",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "Nasconde automaticamente i titoli dei segnalibri (mostrando solo l'icona) se il nome viene lasciato vuoto.",
+    "message": "Nasconde titoli dei segnalibri vuoti o simili a un URL e aggiunge segnalibri rapidamente dal menu della cartella.",
     "description": "Description of the extension"
   },
   "optionsTitle": {

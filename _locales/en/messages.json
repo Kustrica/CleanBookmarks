@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "Favicon Bookmarks",
+    "message": "Clean Bookmarks",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "Automatically hides bookmark titles (showing only the icon) if the name is left empty.",
+    "message": "Hides empty or URL-like bookmark titles and adds bookmarks quickly via the folder menu.",
     "description": "Description of the extension"
   },
   "optionsTitle": {

@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "Favicon Bookmarks",
+    "message": "Clean Bookmarks",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "名前が空の場合、ブックマークのタイトルを自動的に非表示にします（アイコンのみ表示）。",
+    "message": "空のタイトルやURLのようなタイトルを隠し、フォルダーメニューから素早くブックマークを追加します。",
     "description": "Description of the extension"
   },
   "optionsTitle": {

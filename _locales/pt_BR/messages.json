@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "Favicon Bookmarks",
+    "message": "Clean Bookmarks",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "Oculta automaticamente os títulos dos favoritos (mostrando apenas o ícone) se o nome for deixado em branco.",
+    "message": "Oculta títulos de favoritos vazios ou parecidos com URL e adiciona favoritos rapidamente pelo menu da pasta.",
     "description": "Description of the extension"
   },
   "optionsTitle": {
@@ -19,5 +19,8 @@
   },
   "hiddenMsg": {
     "message": "Oculto"
+  },
+  "addBookmarkMenu": {
+    "message": "Adicionar favorito"
   }
 }

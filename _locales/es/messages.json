@@ -1,10 +1,10 @@
 {
   "extensionName": {
-    "message": "Favicon Bookmarks",
+    "message": "Clean Bookmarks",
     "description": "Name of the extension"
   },
   "extensionDescription": {
-    "message": "Oculta automáticamente los títulos de los marcadores (mostrando solo el icono) si el nombre se deja vacío.",
+    "message": "Oculta títulos de marcadores vacíos o similares a una URL y añade marcadores rápidamente desde el menú de la carpeta.",
     "description": "Description of the extension"
   },
   "optionsTitle": {
