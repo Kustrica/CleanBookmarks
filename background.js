@@ -158,3 +158,7 @@ browser.bookmarks.onChanged.addListener((id, changeInfo) => {
         });
     }
 });
+
+browser.action.onClicked.addListener(() => {
+    browser.runtime.openOptionsPage().catch(() => {});
+});
