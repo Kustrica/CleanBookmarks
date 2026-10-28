@@ -1,10 +1,13 @@
 Clean Bookmarks – AMO screenshot captions (upload in this order)
 
-01_icon_only_folders_and_quick_add.png
+01_before_after.png
+Before and after: bookmarks with an empty title or a title that just repeats the address become clean icon-only bookmarks, while bookmarks with real names stay exactly as they are.
+
+02_icon_only_folders_and_quick_add.png
 Empty or URL-like bookmark titles are hidden, so folders show a clean, icon-only view – and every bookmarks folder menu gets an Add bookmark item.
 
-02_settings_before_after.png
+03_settings_before_after.png
 Settings with a live before/after example: hide empty titles and titles that repeat the address, check bookmarks automatically, hide or restore titles in one click, and choose how Add bookmark saves tabs.
 
-03_add_bookmark_in_context.png
+04_add_bookmark_in_context.png
 Right-click a folder on the bookmarks toolbar and choose Add bookmark to save the current tab there in one step.
