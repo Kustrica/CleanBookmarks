@@ -16,5 +16,13 @@
 - Added scripts/check-locales.js to validate all locales.
 
 1.1
-- Quick "Add bookmark" item in the bookmark context menu.
-- Icon-only view for bookmarks with empty or URL-like titles.
+- Quick "Add bookmark" item in the bookmark context menu: saves the current tab into the right-clicked folder (or into the folder of the right-clicked bookmark), translated into all languages.
+- Renamed from "Favicon Bookmarks" to "Clean Bookmarks" with a new icon and an updated description in all languages.
+- Clicking the toolbar icon opens the Options page.
+- Fixed the GitHub link on the Options page.
+- Declared in the manifest that the extension collects no data.
+
+1.0
+- First release (as "Favicon Bookmarks"): bookmarks with empty titles or titles that just repeat the address are shown as icon only.
+- Bookmarks are checked when Firefox starts and after install or update; the Options page has a "Hide" button to run the check manually.
+- Localized interface.
