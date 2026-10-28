@@ -1,0 +1,7 @@
+Clean Bookmarks – AMO screenshot captions (upload in this order)
+
+01_icon_only_folders_and_quick_add.png
+Empty or URL-like bookmark titles are hidden, so folders show a clean, icon-only view – and every bookmarks folder menu gets an Add bookmark item.
+
+02_add_bookmark_in_context.png
+Right-click a folder on the bookmarks toolbar and choose Add bookmark to save the current tab there in one step.
