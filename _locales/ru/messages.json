@@ -11,14 +11,131 @@
     "message": "Настройки",
     "description": "Title of the options page"
   },
+  "languageUpdated": {
+    "message": "Язык изменён. Перезагрузка..."
+  },
   "saved": {
     "message": "Сохранено"
   },
-  "forceHideBtn": {
-    "message": "Скрыть"
+  "sectionHideTitle": {
+    "message": "Закладки-значки"
   },
-  "hiddenMsg": {
-    "message": "Спрятано"
+  "sectionHideDesc": {
+    "message": "Закладки с пустым названием или названием, которое просто повторяет адрес, получают невидимое название — остаётся только значок сайта. Закладки с настоящими названиями не меняются."
+  },
+  "previewBefore": {
+    "message": "До"
+  },
+  "previewAfter": {
+    "message": "После"
+  },
+  "previewNoTitle": {
+    "message": "(без названия)"
+  },
+  "previewKept": {
+    "message": "как было"
+  },
+  "previewIconOnly": {
+    "message": "только значок"
+  },
+  "hideUrlLikeLabel": {
+    "message": "Скрывать и названия, повторяющие адрес"
+  },
+  "hideUrlLikeDesc": {
+    "message": "Адрес распознаётся с https://, www. и слешем в конце или без них. Выключите, чтобы скрывались только пустые названия."
+  },
+  "autoHideNewLabel": {
+    "message": "Автоматически проверять новые и переименованные закладки"
+  },
+  "autoHideNewDesc": {
+    "message": "Закладка проверяется сразу, как только вы её создаёте или меняете её название."
+  },
+  "scanOnStartupLabel": {
+    "message": "Проверять все закладки при запуске Firefox"
+  },
+  "scanOnStartupDesc": {
+    "message": "Также выполняется один раз после установки или обновления расширения."
+  },
+  "forceHideBtn": {
+    "message": "Скрыть сейчас"
+  },
+  "restoreBtn": {
+    "message": "Вернуть названия"
+  },
+  "manualActionsDesc": {
+    "message": "«Скрыть сейчас» проверяет все закладки по правилам выше. «Вернуть названия» снова даёт закладкам-значкам видимое название — адрес сайта, например github.com/Kustrica."
+  },
+  "iconOnlyCount": {
+    "message": "Закладок-значков: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "hiddenCountMsg": {
+    "message": "Скрыто названий: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "nothingToHideMsg": {
+    "message": "Нечего скрывать"
+  },
+  "restoreConfirm": {
+    "message": "Закладок-значков: $COUNT$. Дать им видимое название (адрес сайта)? Автоматические проверки будут выключены, иначе названия снова скроются.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "restoreConfirmYes": {
+    "message": "Вернуть"
+  },
+  "cancelBtn": {
+    "message": "Отмена"
+  },
+  "restoredCountMsg": {
+    "message": "Возвращено названий: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "sectionAddTitle": {
+    "message": "Быстрое добавление"
+  },
+  "sectionAddDesc": {
+    "message": "Сохраняйте текущую вкладку из контекстного меню закладок — на панели закладок, в меню «Закладки» или на боковой панели."
+  },
+  "showAddMenuLabel": {
+    "message": "Показывать «Добавить закладку» в контекстном меню закладок"
+  },
+  "showAddMenuDesc": {
+    "message": "Щёлкните правой кнопкой по папке, чтобы сохранить в неё текущую вкладку, или по закладке, чтобы сохранить вкладку сразу после неё."
+  },
+  "addPositionLabel": {
+    "message": "Куда добавлять в папке"
+  },
+  "addPositionEnd": {
+    "message": "В конец папки"
+  },
+  "addPositionStart": {
+    "message": "В начало папки"
+  },
+  "addIconOnlyLabel": {
+    "message": "Сохранять быстро добавленные закладки только значком"
+  },
+  "addIconOnlyDesc": {
+    "message": "Закладка сохраняется без видимого названия, остаётся только значок сайта — удобно для компактной панели из значков."
   },
   "addBookmarkMenu": {
     "message": "Добавить закладку"

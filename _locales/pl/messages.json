@@ -11,14 +11,131 @@
     "message": "Ustawienia",
     "description": "Title of the options page"
   },
+  "languageUpdated": {
+    "message": "Zmieniono język. Ponowne wczytywanie..."
+  },
   "saved": {
     "message": "Zapisano"
   },
-  "forceHideBtn": {
-    "message": "Ukryj"
+  "sectionHideTitle": {
+    "message": "Zakładki jako ikony"
   },
-  "hiddenMsg": {
-    "message": "Ukryto"
+  "sectionHideDesc": {
+    "message": "Zakładki z pustym tytułem lub tytułem, który tylko powtarza adres, dostają niewidoczny tytuł, więc widać tylko ikonę strony. Zakładki z prawdziwymi nazwami nigdy nie są zmieniane."
+  },
+  "previewBefore": {
+    "message": "Przed"
+  },
+  "previewAfter": {
+    "message": "Po"
+  },
+  "previewNoTitle": {
+    "message": "(bez tytułu)"
+  },
+  "previewKept": {
+    "message": "bez zmian"
+  },
+  "previewIconOnly": {
+    "message": "tylko ikona"
+  },
+  "hideUrlLikeLabel": {
+    "message": "Ukrywaj też tytuły powtarzające adres"
+  },
+  "hideUrlLikeDesc": {
+    "message": "Adres jest rozpoznawany z https://, www. i ukośnikiem na końcu lub bez nich. Wyłącz, aby ukrywać tylko puste tytuły."
+  },
+  "autoHideNewLabel": {
+    "message": "Automatycznie sprawdzaj nowe i zmienione zakładki"
+  },
+  "autoHideNewDesc": {
+    "message": "Zakładka jest sprawdzana od razu po utworzeniu lub zmianie jej tytułu."
+  },
+  "scanOnStartupLabel": {
+    "message": "Sprawdzaj wszystkie zakładki przy uruchomieniu Firefoksa"
+  },
+  "scanOnStartupDesc": {
+    "message": "Uruchamiane także raz po instalacji lub aktualizacji rozszerzenia."
+  },
+  "forceHideBtn": {
+    "message": "Ukryj teraz"
+  },
+  "restoreBtn": {
+    "message": "Przywróć tytuły"
+  },
+  "manualActionsDesc": {
+    "message": "„Ukryj teraz” sprawdza wszystkie zakładki według powyższych reguł. „Przywróć tytuły” ponownie nadaje zakładkom-ikonom widoczny tytuł – adres strony, np. github.com/Kustrica."
+  },
+  "iconOnlyCount": {
+    "message": "Zakładki jako ikony: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "hiddenCountMsg": {
+    "message": "Ukryte tytuły: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "nothingToHideMsg": {
+    "message": "Nie ma nic do ukrycia"
+  },
+  "restoreConfirm": {
+    "message": "Zakładki jako ikony: $COUNT$. Nadać im widoczny tytuł (adres strony)? Automatyczne sprawdzanie zostanie wyłączone, w przeciwnym razie tytuły znów by się ukryły.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "restoreConfirmYes": {
+    "message": "Przywróć"
+  },
+  "cancelBtn": {
+    "message": "Anuluj"
+  },
+  "restoredCountMsg": {
+    "message": "Przywrócone tytuły: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "sectionAddTitle": {
+    "message": "Szybkie dodawanie"
+  },
+  "sectionAddDesc": {
+    "message": "Zapisuj bieżącą kartę z menu kontekstowego zakładek – na pasku zakładek, w menu Zakładki lub na panelu bocznym."
+  },
+  "showAddMenuLabel": {
+    "message": "Pokazuj „Dodaj zakładkę” w menu kontekstowym zakładek"
+  },
+  "showAddMenuDesc": {
+    "message": "Kliknij prawym przyciskiem folder, aby zapisać w nim bieżącą kartę, lub zakładkę, aby zapisać kartę zaraz za nią."
+  },
+  "addPositionLabel": {
+    "message": "Gdzie umieszczać w folderze"
+  },
+  "addPositionEnd": {
+    "message": "Na końcu folderu"
+  },
+  "addPositionStart": {
+    "message": "Na początku folderu"
+  },
+  "addIconOnlyLabel": {
+    "message": "Zapisuj szybko dodane zakładki jako same ikony"
+  },
+  "addIconOnlyDesc": {
+    "message": "Zakładka jest zapisywana bez widocznego tytułu, więc widać tylko jej ikonę – wygodne dla zwartego paska ikon stron."
   },
   "addBookmarkMenu": {
     "message": "Dodaj zakładkę"

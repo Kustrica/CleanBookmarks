@@ -11,17 +11,133 @@
     "message": "Einstellungen",
     "description": "Title of the options page"
   },
+  "languageUpdated": {
+    "message": "Sprache geändert. Seite wird neu geladen..."
+  },
   "saved": {
     "message": "Gespeichert"
   },
-  "forceHideBtn": {
-    "message": "Ausblenden"
+  "sectionHideTitle": {
+    "message": "Lesezeichen nur als Symbol"
   },
-  "hiddenMsg": {
-    "message": "Ausgeblendet"
+  "sectionHideDesc": {
+    "message": "Lesezeichen, deren Titel leer ist oder nur die Adresse wiederholt, erhalten einen unsichtbaren Titel, sodass nur das Website-Symbol angezeigt wird. Lesezeichen mit echten Namen werden nie verändert."
+  },
+  "previewBefore": {
+    "message": "Vorher"
+  },
+  "previewAfter": {
+    "message": "Nachher"
+  },
+  "previewNoTitle": {
+    "message": "(kein Titel)"
+  },
+  "previewKept": {
+    "message": "bleibt"
+  },
+  "previewIconOnly": {
+    "message": "nur Symbol"
+  },
+  "hideUrlLikeLabel": {
+    "message": "Auch Titel ausblenden, die die Adresse wiederholen"
+  },
+  "hideUrlLikeDesc": {
+    "message": "Die Adresse wird mit oder ohne https://, www. und abschließenden Schrägstrich erkannt. Deaktivieren, um nur leere Titel auszublenden."
+  },
+  "autoHideNewLabel": {
+    "message": "Neue und umbenannte Lesezeichen automatisch prüfen"
+  },
+  "autoHideNewDesc": {
+    "message": "Ein Lesezeichen wird geprüft, sobald Sie es anlegen oder seinen Titel ändern."
+  },
+  "scanOnStartupLabel": {
+    "message": "Alle Lesezeichen beim Start von Firefox prüfen"
+  },
+  "scanOnStartupDesc": {
+    "message": "Wird außerdem einmal nach der Installation oder einem Update der Erweiterung ausgeführt."
+  },
+  "forceHideBtn": {
+    "message": "Jetzt ausblenden"
+  },
+  "restoreBtn": {
+    "message": "Titel wiederherstellen"
+  },
+  "manualActionsDesc": {
+    "message": "„Jetzt ausblenden“ prüft alle Lesezeichen nach den obigen Regeln. „Titel wiederherstellen“ gibt Lesezeichen, die nur als Symbol angezeigt werden, wieder einen sichtbaren Titel – die Adresse der Website, z. B. github.com/Kustrica."
+  },
+  "iconOnlyCount": {
+    "message": "Lesezeichen nur als Symbol: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "hiddenCountMsg": {
+    "message": "Ausgeblendete Titel: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "nothingToHideMsg": {
+    "message": "Nichts auszublenden"
+  },
+  "restoreConfirm": {
+    "message": "Lesezeichen nur als Symbol: $COUNT$. Ihnen einen sichtbaren Titel (die Website-Adresse) geben? Die automatischen Prüfungen werden deaktiviert, sonst würden die Titel wieder ausgeblendet.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "restoreConfirmYes": {
+    "message": "Wiederherstellen"
+  },
+  "cancelBtn": {
+    "message": "Abbrechen"
+  },
+  "restoredCountMsg": {
+    "message": "Wiederhergestellte Titel: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "sectionAddTitle": {
+    "message": "Schnell hinzufügen"
+  },
+  "sectionAddDesc": {
+    "message": "Speichern Sie den aktuellen Tab über das Kontextmenü der Lesezeichen – in der Lesezeichen-Symbolleiste, im Lesezeichen-Menü oder in der Sidebar."
+  },
+  "showAddMenuLabel": {
+    "message": "„Lesezeichen hinzufügen“ im Kontextmenü der Lesezeichen anzeigen"
+  },
+  "showAddMenuDesc": {
+    "message": "Rechtsklick auf einen Ordner speichert den aktuellen Tab darin, Rechtsklick auf ein Lesezeichen speichert den Tab direkt dahinter."
+  },
+  "addPositionLabel": {
+    "message": "Position im Ordner"
+  },
+  "addPositionEnd": {
+    "message": "Am Ende des Ordners"
+  },
+  "addPositionStart": {
+    "message": "Am Anfang des Ordners"
+  },
+  "addIconOnlyLabel": {
+    "message": "Schnell hinzugefügte Lesezeichen nur als Symbol speichern"
+  },
+  "addIconOnlyDesc": {
+    "message": "Das Lesezeichen wird ohne sichtbaren Titel gespeichert, sodass nur sein Symbol erscheint – praktisch für eine kompakte Leiste aus Website-Symbolen."
   },
   "addBookmarkMenu": {
     "message": "Lesezeichen hinzufügen"
   }
-   
 }

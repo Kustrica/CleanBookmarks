@@ -11,14 +11,131 @@
     "message": "Paramètres",
     "description": "Title of the options page"
   },
+  "languageUpdated": {
+    "message": "Langue modifiée. Rechargement..."
+  },
   "saved": {
     "message": "Enregistré"
   },
-  "forceHideBtn": {
-    "message": "Masquer"
+  "sectionHideTitle": {
+    "message": "Marque-pages en icône seule"
   },
-  "hiddenMsg": {
-    "message": "Masqué"
+  "sectionHideDesc": {
+    "message": "Les marque-pages dont le titre est vide ou répète simplement l’adresse reçoivent un titre invisible : seule l’icône du site reste affichée. Les marque-pages avec un vrai nom ne sont jamais modifiés."
+  },
+  "previewBefore": {
+    "message": "Avant"
+  },
+  "previewAfter": {
+    "message": "Après"
+  },
+  "previewNoTitle": {
+    "message": "(sans titre)"
+  },
+  "previewKept": {
+    "message": "conservé"
+  },
+  "previewIconOnly": {
+    "message": "icône seule"
+  },
+  "hideUrlLikeLabel": {
+    "message": "Masquer aussi les titres qui répètent l’adresse"
+  },
+  "hideUrlLikeDesc": {
+    "message": "L’adresse est reconnue avec ou sans https://, www. ou barre oblique finale. Désactivez pour ne masquer que les titres vides."
+  },
+  "autoHideNewLabel": {
+    "message": "Vérifier automatiquement les marque-pages nouveaux ou renommés"
+  },
+  "autoHideNewDesc": {
+    "message": "Un marque-page est vérifié dès que vous le créez ou modifiez son titre."
+  },
+  "scanOnStartupLabel": {
+    "message": "Vérifier tous les marque-pages au démarrage de Firefox"
+  },
+  "scanOnStartupDesc": {
+    "message": "S’exécute aussi une fois après l’installation ou la mise à jour de l’extension."
+  },
+  "forceHideBtn": {
+    "message": "Masquer maintenant"
+  },
+  "restoreBtn": {
+    "message": "Restaurer les titres"
+  },
+  "manualActionsDesc": {
+    "message": "« Masquer maintenant » vérifie tous les marque-pages selon les règles ci-dessus. « Restaurer les titres » redonne un titre visible aux marque-pages en icône seule – l’adresse du site, par exemple github.com/Kustrica."
+  },
+  "iconOnlyCount": {
+    "message": "Marque-pages en icône seule : $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "hiddenCountMsg": {
+    "message": "Titres masqués : $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "nothingToHideMsg": {
+    "message": "Rien à masquer"
+  },
+  "restoreConfirm": {
+    "message": "Marque-pages en icône seule : $COUNT$. Leur donner un titre visible (l’adresse du site) ? Les vérifications automatiques seront désactivées, sinon les titres seraient de nouveau masqués.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "restoreConfirmYes": {
+    "message": "Restaurer"
+  },
+  "cancelBtn": {
+    "message": "Annuler"
+  },
+  "restoredCountMsg": {
+    "message": "Titres restaurés : $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "sectionAddTitle": {
+    "message": "Ajout rapide"
+  },
+  "sectionAddDesc": {
+    "message": "Enregistrez l’onglet actuel depuis le menu contextuel des marque-pages – dans la barre personnelle, le menu Marque-pages ou la barre latérale."
+  },
+  "showAddMenuLabel": {
+    "message": "Afficher « Ajouter un marque-page » dans le menu contextuel des marque-pages"
+  },
+  "showAddMenuDesc": {
+    "message": "Clic droit sur un dossier pour y enregistrer l’onglet actuel, ou sur un marque-page pour enregistrer l’onglet juste après."
+  },
+  "addPositionLabel": {
+    "message": "Emplacement dans le dossier"
+  },
+  "addPositionEnd": {
+    "message": "À la fin du dossier"
+  },
+  "addPositionStart": {
+    "message": "En haut du dossier"
+  },
+  "addIconOnlyLabel": {
+    "message": "Enregistrer les ajouts rapides en icône seule"
+  },
+  "addIconOnlyDesc": {
+    "message": "Le marque-page est enregistré sans titre visible, seule son icône apparaît – pratique pour une barre compacte d’icônes de sites."
   },
   "addBookmarkMenu": {
     "message": "Ajouter un marque-page"

@@ -11,14 +11,131 @@
     "message": "Cài đặt",
     "description": "Title of the options page"
   },
+  "languageUpdated": {
+    "message": "Đã đổi ngôn ngữ. Đang tải lại..."
+  },
   "saved": {
     "message": "Đã lưu"
   },
-  "forceHideBtn": {
-    "message": "Ẩn"
+  "sectionHideTitle": {
+    "message": "Dấu trang chỉ có biểu tượng"
   },
-  "hiddenMsg": {
-    "message": "Đã ẩn"
+  "sectionHideDesc": {
+    "message": "Dấu trang có tiêu đề trống hoặc chỉ lặp lại địa chỉ sẽ được đặt tiêu đề vô hình, nên chỉ còn biểu tượng trang web. Dấu trang có tên thật không bao giờ bị thay đổi."
+  },
+  "previewBefore": {
+    "message": "Trước"
+  },
+  "previewAfter": {
+    "message": "Sau"
+  },
+  "previewNoTitle": {
+    "message": "(không có tiêu đề)"
+  },
+  "previewKept": {
+    "message": "giữ nguyên"
+  },
+  "previewIconOnly": {
+    "message": "chỉ biểu tượng"
+  },
+  "hideUrlLikeLabel": {
+    "message": "Ẩn cả tiêu đề lặp lại địa chỉ"
+  },
+  "hideUrlLikeDesc": {
+    "message": "Địa chỉ được nhận diện dù có hay không có https://, www. hoặc dấu gạch chéo cuối. Tắt để chỉ ẩn tiêu đề trống."
+  },
+  "autoHideNewLabel": {
+    "message": "Tự động kiểm tra dấu trang mới và dấu trang được đổi tên"
+  },
+  "autoHideNewDesc": {
+    "message": "Dấu trang được kiểm tra ngay khi bạn tạo hoặc đổi tiêu đề của nó."
+  },
+  "scanOnStartupLabel": {
+    "message": "Kiểm tra tất cả dấu trang khi Firefox khởi động"
+  },
+  "scanOnStartupDesc": {
+    "message": "Cũng chạy một lần sau khi cài đặt hoặc cập nhật tiện ích."
+  },
+  "forceHideBtn": {
+    "message": "Ẩn ngay"
+  },
+  "restoreBtn": {
+    "message": "Khôi phục tiêu đề"
+  },
+  "manualActionsDesc": {
+    "message": "“Ẩn ngay” kiểm tra tất cả dấu trang theo các quy tắc ở trên. “Khôi phục tiêu đề” trả lại tiêu đề hiển thị cho các dấu trang chỉ có biểu tượng – địa chỉ trang web, ví dụ github.com/Kustrica."
+  },
+  "iconOnlyCount": {
+    "message": "Dấu trang chỉ có biểu tượng: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "hiddenCountMsg": {
+    "message": "Đã ẩn tiêu đề: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "nothingToHideMsg": {
+    "message": "Không có gì để ẩn"
+  },
+  "restoreConfirm": {
+    "message": "Dấu trang chỉ có biểu tượng: $COUNT$. Đặt cho chúng tiêu đề hiển thị (địa chỉ trang web)? Kiểm tra tự động sẽ bị tắt, nếu không tiêu đề sẽ lại bị ẩn.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "restoreConfirmYes": {
+    "message": "Khôi phục"
+  },
+  "cancelBtn": {
+    "message": "Hủy"
+  },
+  "restoredCountMsg": {
+    "message": "Đã khôi phục tiêu đề: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "sectionAddTitle": {
+    "message": "Thêm nhanh"
+  },
+  "sectionAddDesc": {
+    "message": "Lưu thẻ hiện tại từ menu ngữ cảnh của dấu trang – trên thanh dấu trang, trong menu Dấu trang hoặc thanh bên."
+  },
+  "showAddMenuLabel": {
+    "message": "Hiện “Thêm dấu trang” trong menu ngữ cảnh của dấu trang"
+  },
+  "showAddMenuDesc": {
+    "message": "Nhấp chuột phải vào thư mục để lưu thẻ hiện tại vào đó, hoặc vào một dấu trang để lưu thẻ ngay sau nó."
+  },
+  "addPositionLabel": {
+    "message": "Vị trí trong thư mục"
+  },
+  "addPositionEnd": {
+    "message": "Ở cuối thư mục"
+  },
+  "addPositionStart": {
+    "message": "Ở đầu thư mục"
+  },
+  "addIconOnlyLabel": {
+    "message": "Lưu dấu trang thêm nhanh chỉ với biểu tượng"
+  },
+  "addIconOnlyDesc": {
+    "message": "Dấu trang được lưu không có tiêu đề hiển thị, nên chỉ còn biểu tượng – tiện cho thanh biểu tượng trang web gọn gàng."
   },
   "addBookmarkMenu": {
     "message": "Thêm dấu trang"

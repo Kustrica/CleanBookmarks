@@ -11,14 +11,131 @@
     "message": "Configurações",
     "description": "Title of the options page"
   },
+  "languageUpdated": {
+    "message": "Idioma atualizado. Recarregando..."
+  },
   "saved": {
     "message": "Salvo"
   },
-  "forceHideBtn": {
-    "message": "Ocultar"
+  "sectionHideTitle": {
+    "message": "Favoritos só com ícone"
   },
-  "hiddenMsg": {
-    "message": "Oculto"
+  "sectionHideDesc": {
+    "message": "Favoritos com título vazio ou que apenas repete o endereço recebem um título invisível, então só o ícone do site aparece. Favoritos com nomes de verdade nunca são alterados."
+  },
+  "previewBefore": {
+    "message": "Antes"
+  },
+  "previewAfter": {
+    "message": "Depois"
+  },
+  "previewNoTitle": {
+    "message": "(sem título)"
+  },
+  "previewKept": {
+    "message": "mantido"
+  },
+  "previewIconOnly": {
+    "message": "só ícone"
+  },
+  "hideUrlLikeLabel": {
+    "message": "Ocultar também títulos que repetem o endereço"
+  },
+  "hideUrlLikeDesc": {
+    "message": "O endereço é reconhecido com ou sem https://, www. ou barra final. Desative para ocultar apenas títulos vazios."
+  },
+  "autoHideNewLabel": {
+    "message": "Verificar automaticamente favoritos novos e renomeados"
+  },
+  "autoHideNewDesc": {
+    "message": "Um favorito é verificado assim que você o cria ou muda o título dele."
+  },
+  "scanOnStartupLabel": {
+    "message": "Verificar todos os favoritos ao iniciar o Firefox"
+  },
+  "scanOnStartupDesc": {
+    "message": "Também é executado uma vez após instalar ou atualizar a extensão."
+  },
+  "forceHideBtn": {
+    "message": "Ocultar agora"
+  },
+  "restoreBtn": {
+    "message": "Restaurar títulos"
+  },
+  "manualActionsDesc": {
+    "message": "“Ocultar agora” verifica todos os favoritos com as regras acima. “Restaurar títulos” devolve um título visível aos favoritos só com ícone – o endereço do site, por exemplo github.com/Kustrica."
+  },
+  "iconOnlyCount": {
+    "message": "Favoritos só com ícone: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "hiddenCountMsg": {
+    "message": "Títulos ocultados: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "nothingToHideMsg": {
+    "message": "Nada para ocultar"
+  },
+  "restoreConfirm": {
+    "message": "Favoritos só com ícone: $COUNT$. Dar a eles um título visível (o endereço do site)? As verificações automáticas serão desativadas; caso contrário, os títulos seriam ocultados de novo.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "restoreConfirmYes": {
+    "message": "Restaurar"
+  },
+  "cancelBtn": {
+    "message": "Cancelar"
+  },
+  "restoredCountMsg": {
+    "message": "Títulos restaurados: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "sectionAddTitle": {
+    "message": "Adição rápida"
+  },
+  "sectionAddDesc": {
+    "message": "Salve a aba atual pelo menu de contexto dos favoritos – na barra de favoritos, no menu Favoritos ou na barra lateral."
+  },
+  "showAddMenuLabel": {
+    "message": "Mostrar “Adicionar favorito” no menu de contexto dos favoritos"
+  },
+  "showAddMenuDesc": {
+    "message": "Clique com o botão direito em uma pasta para salvar nela a aba atual, ou em um favorito para salvar a aba logo depois dele."
+  },
+  "addPositionLabel": {
+    "message": "Onde colocar na pasta"
+  },
+  "addPositionEnd": {
+    "message": "No fim da pasta"
+  },
+  "addPositionStart": {
+    "message": "No início da pasta"
+  },
+  "addIconOnlyLabel": {
+    "message": "Salvar favoritos adicionados rapidamente só com ícone"
+  },
+  "addIconOnlyDesc": {
+    "message": "O favorito é salvo sem título visível, então só o ícone aparece – prático para uma barra compacta de ícones de sites."
   },
   "addBookmarkMenu": {
     "message": "Adicionar favorito"

@@ -11,14 +11,131 @@
     "message": "الإعدادات",
     "description": "Title of the options page"
   },
+  "languageUpdated": {
+    "message": "تم تحديث اللغة. جارٍ إعادة التحميل..."
+  },
   "saved": {
     "message": "تم الحفظ"
   },
-  "forceHideBtn": {
-    "message": "إخفاء"
+  "sectionHideTitle": {
+    "message": "إشارات مرجعية بالأيقونة فقط"
   },
-  "hiddenMsg": {
-    "message": "مخفي"
+  "sectionHideDesc": {
+    "message": "الإشارات المرجعية التي يكون عنوانها فارغًا أو يكرر العنوان فقط تحصل على عنوان غير مرئي، فتظهر أيقونة الموقع وحدها. لا تُغيَّر أبدًا الإشارات المرجعية ذات الأسماء الحقيقية."
+  },
+  "previewBefore": {
+    "message": "قبل"
+  },
+  "previewAfter": {
+    "message": "بعد"
+  },
+  "previewNoTitle": {
+    "message": "(بلا عنوان)"
+  },
+  "previewKept": {
+    "message": "كما هي"
+  },
+  "previewIconOnly": {
+    "message": "أيقونة فقط"
+  },
+  "hideUrlLikeLabel": {
+    "message": "إخفاء العناوين التي تكرر عنوان URL أيضًا"
+  },
+  "hideUrlLikeDesc": {
+    "message": "يُتعرَّف على العنوان مع https:// أو www. أو الشرطة المائلة في النهاية أو بدونها. أوقف الخيار لإخفاء العناوين الفارغة فقط."
+  },
+  "autoHideNewLabel": {
+    "message": "فحص الإشارات المرجعية الجديدة والمعاد تسميتها تلقائيًا"
+  },
+  "autoHideNewDesc": {
+    "message": "تُفحص الإشارة المرجعية فور إنشائها أو تغيير عنوانها."
+  },
+  "scanOnStartupLabel": {
+    "message": "فحص كل الإشارات المرجعية عند بدء Firefox"
+  },
+  "scanOnStartupDesc": {
+    "message": "يُنفَّذ أيضًا مرة واحدة بعد تثبيت الإضافة أو تحديثها."
+  },
+  "forceHideBtn": {
+    "message": "إخفاء الآن"
+  },
+  "restoreBtn": {
+    "message": "استعادة العناوين"
+  },
+  "manualActionsDesc": {
+    "message": "«إخفاء الآن» يفحص كل الإشارات المرجعية وفق القواعد أعلاه. «استعادة العناوين» يعيد عنوانًا مرئيًا للإشارات المرجعية بالأيقونة فقط – عنوان الموقع، مثل github.com/Kustrica."
+  },
+  "iconOnlyCount": {
+    "message": "إشارات مرجعية بالأيقونة فقط: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "hiddenCountMsg": {
+    "message": "عناوين مخفية: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "nothingToHideMsg": {
+    "message": "لا يوجد ما يُخفى"
+  },
+  "restoreConfirm": {
+    "message": "إشارات مرجعية بالأيقونة فقط: $COUNT$. هل تريد منحها عنوانًا مرئيًا (عنوان الموقع)؟ سيتم إيقاف الفحص التلقائي، وإلا ستُخفى العناوين مجددًا.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "restoreConfirmYes": {
+    "message": "استعادة"
+  },
+  "cancelBtn": {
+    "message": "إلغاء"
+  },
+  "restoredCountMsg": {
+    "message": "عناوين مستعادة: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "sectionAddTitle": {
+    "message": "إضافة سريعة"
+  },
+  "sectionAddDesc": {
+    "message": "احفظ اللسان الحالي من قائمة سياق الإشارات المرجعية – في شريط الإشارات المرجعية أو قائمة الإشارات المرجعية أو الشريط الجانبي."
+  },
+  "showAddMenuLabel": {
+    "message": "إظهار «إضافة إشارة مرجعية» في قائمة سياق الإشارات المرجعية"
+  },
+  "showAddMenuDesc": {
+    "message": "انقر بزر الفأرة الأيمن على مجلد لحفظ اللسان الحالي فيه، أو على إشارة مرجعية لحفظ اللسان بعدها مباشرة."
+  },
+  "addPositionLabel": {
+    "message": "مكان الإضافة في المجلد"
+  },
+  "addPositionEnd": {
+    "message": "في نهاية المجلد"
+  },
+  "addPositionStart": {
+    "message": "في بداية المجلد"
+  },
+  "addIconOnlyLabel": {
+    "message": "حفظ الإشارات المضافة بسرعة بالأيقونة فقط"
+  },
+  "addIconOnlyDesc": {
+    "message": "تُحفظ الإشارة المرجعية بلا عنوان مرئي فتظهر أيقونتها فقط – مفيد لشريط مضغوط من أيقونات المواقع."
   },
   "addBookmarkMenu": {
     "message": "إضافة إشارة مرجعية"

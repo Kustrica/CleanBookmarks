@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title data-i18n="optionsTitle">Options</title>
     <style>
         body {
@@ -9,73 +10,189 @@
             color: #fbfbfe;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             padding: 40px;
-            max-width: 700px;
+            max-width: 760px;
             margin: 0 auto;
         }
-        
-        h1 { 
-            border-bottom: 1px solid #444; 
-            padding-bottom: 15px; 
-            margin-bottom: 30px;
+
+        h1 {
             font-size: 24px;
             font-weight: 600;
+            margin: 0;
         }
-        
-        h2 { 
-            font-size: 18px; 
-            margin-bottom: 15px; 
+
+        h2 {
+            font-size: 17px;
+            margin: 0 0 6px 0;
             color: #ff9400;
+            font-weight: 600;
         }
-        
-        .section { 
+
+        .section-desc {
+            color: #b8b8c0;
+            font-size: 13px;
+            line-height: 1.5;
+            margin: 0 0 16px 0;
+        }
+
+        .section {
             background: #2b2a33;
             border-radius: 8px;
-            padding: 20px; 
-            margin-bottom: 25px;
+            padding: 16px 20px 20px 20px;
+            margin-bottom: 22px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-        
-        .control-group {
-            margin-bottom: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
-        
-        #force-scan-btn {
-            appearance: none;
-            -webkit-appearance: none;
-            padding: 10px 30px; 
-            cursor: pointer; 
-            background-color: transparent; 
-            border: 2px solid #ff9400; 
-            color: #ff9400; 
-            font-weight: bold; 
-            border-radius: 4px;
-            font-size: 16px;
-            transition: all 0.2s ease;
-            display: inline-block;
-            text-align: center;
         }
 
-        #force-scan-btn:hover {
-            background-color: rgba(255, 148, 0, 0.1);
-            transform: scale(1.02);
-        }
+        .control-group { margin-bottom: 18px; }
+        .control-group:last-child { margin-bottom: 0; }
 
-        .info-text {
-            color: #ccc;
-            font-size: 14px;
-            margin-top: 15px;
+        .field-row {
+            display: grid;
+            grid-template-columns: 18px 10px minmax(0, 1fr);
+            align-items: start;
+        }
+        .field-control { grid-column: 1; margin-top: 2px; }
+        .field-spacer { grid-column: 1 / 3; }
+        .field-body { grid-column: 3; min-width: 0; }
+
+        .field-label {
+            display: block;
+            font-size: 15px;
+            line-height: 1.4;
+            cursor: pointer;
+        }
+        .field-label--heading {
+            font-weight: 500;
+            cursor: default;
+            margin-bottom: 8px;
+        }
+        .field-hint {
+            color: #b8b8c0;
+            font-size: 13px;
+            margin: 6px 0 0 0;
             line-height: 1.5;
-            max-width: 80%;
         }
-        
+
+        .radio-option { margin-top: 10px; }
+        .radio-option .field-label { font-size: 14px; }
+
+        .is-disabled { opacity: 0.45; pointer-events: none; }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            width: 18px;
+            height: 18px;
+            margin: 0;
+            accent-color: #ff9400;
+            cursor: pointer;
+        }
+
+        /* Live example */
+        .preview {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            gap: 12px;
+            margin: 4px 0 18px 0;
+        }
+        .preview-col {
+            background: #1c1b22;
+            border: 1px solid #3d3c46;
+            border-radius: 8px;
+            padding: 10px 12px 12px;
+            min-width: 0;
+        }
+        .preview-caption {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: #8f8f9d;
+            margin: 0 0 8px 0;
+        }
+        .preview-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            height: 28px;
+            padding: 0 6px;
+            border-radius: 4px;
+            font-size: 13px;
+            min-width: 0;
+        }
+        .preview-row + .preview-row { margin-top: 2px; }
+        .preview-row:hover { background: #2b2a33; }
+        .fav {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: 700;
+            color: #fff;
+        }
+        .fav--a { background: #3b82f6; }
+        .fav--b { background: #e5484d; }
+        .fav--c { background: #22a06b; }
+        .preview-title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            min-width: 0;
+        }
+        .preview-title--muted { color: #8f8f9d; font-style: italic; }
+        .preview-tag {
+            margin-inline-start: auto;
+            font-size: 11px;
+            padding: 1px 6px;
+            border-radius: 10px;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+        .preview-tag--kept { color: #b8b8c0; background: #35343d; }
+        .preview-tag--hidden { color: #ff9400; background: rgba(255, 148, 0, 0.12); }
+
+        /* Buttons */
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+        }
+        .btn {
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            border: 1px solid transparent;
+            transition: background 0.15s, border-color 0.15s, color 0.15s;
+        }
+        .btn-primary { background: #ff9400; color: #1c1b22; }
+        .btn-primary:hover { background: #ffb347; }
+        .btn-secondary { background: transparent; color: #d8d8e0; border-color: #555; }
+        .btn-secondary:hover { border-color: #ff9400; color: #ff9400; }
+        .btn:disabled { opacity: 0.5; cursor: default; }
+        .stat {
+            color: #b8b8c0;
+            font-size: 13px;
+            margin-inline-start: auto;
+        }
+        .confirm-box {
+            margin-top: 12px;
+            background: #3a2f1f;
+            border: 1px solid #ff9400;
+            border-radius: 8px;
+            padding: 12px 14px;
+        }
+        .confirm-box p {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #d8d8e0;
+        }
+        .hidden { display: none !important; }
+
         #status-msg {
             position: fixed;
             bottom: 20px;
@@ -83,72 +200,205 @@
             z-index: 1000;
             padding: 12px 20px;
             border-radius: 8px;
-            margin-top: 0;
-            text-align: center;
             opacity: 0;
             transition: opacity 0.3s;
             box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-            pointer-events: none; 
+            pointer-events: none;
         }
         #status-msg.success { background: rgba(20, 30, 20, 0.95); color: #4caf50; border: 1px solid #4caf50; opacity: 1; }
-        
-        .social-links {
+
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #444;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .page-header-tools {
             display: flex;
             align-items: center;
             gap: 15px;
+            flex-wrap: wrap;
         }
-        .social-links a {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-            opacity: 0.8;
-            transition: opacity 0.2s, transform 0.2s;
+        .language-select {
+            background: #1c1b22;
+            color: #ccc;
+            border: 1px solid #555;
+            padding: 4px 8px;
+            border-radius: 4px;
+            outline: none;
+            font-size: 13px;
+            max-width: 220px;
         }
-        .social-links a:hover {
-            opacity: 1;
-            transform: scale(1.1);
-        }
-        .social-links img {
-            height: 32px;
-            width: 32px;
-            object-fit: contain;
+        .language-select:focus { border-color: #ff9400; }
+        .social-links { display: flex; align-items: center; gap: 15px; }
+        .social-links a { display: flex; align-items: center; text-decoration: none; opacity: 0.8; transition: opacity 0.2s, transform 0.2s; }
+        .social-links a:hover { opacity: 1; transform: scale(1.1); }
+        .social-links img { height: 32px; width: 32px; object-fit: contain; }
+
+        @media (max-width: 600px) {
+            body { padding: 20px; }
+            .preview { grid-template-columns: minmax(0, 1fr); }
         }
     </style>
 </head>
 <body>
-    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #444; padding-bottom: 15px; margin-bottom: 30px;">
-        <h1 data-i18n="optionsTitle" style="border: none; padding: 0; margin: 0;">Options</h1>
-        <div class="social-links">
-             <a href="https://github.com/Kustrica/CleanBookmarks" target="_blank" title="GitHub">
-                <img src="icons/github-64.png">
-            </a>
-            <a href="https://t.me/kustric" target="_blank" title="Telegram">
-                <img src="icons/telegram-1000-1000.png">
-            </a>
-            <a href="https://ko-fi.com/kustrica" target="_blank" title="Ko-fi">
-                <img src="icons/kofi-321-258.png">
-            </a>
-            <a href="https://www.patreon.com/kustrica" target="_blank" title="Patreon">
-                <img src="icons/patreon-128-140.png">
-            </a>
-            <a href="https://boosty.to/kustrica" target="_blank" title="Boosty">
-                <img src="icons/boosty-128-154.png">
-            </a>
+    <div class="page-header">
+        <h1 data-i18n="optionsTitle">Options</h1>
+        <div class="page-header-tools">
+            <select id="ui-language-select" class="language-select" aria-label="Language">
+                <option value="auto">Auto (Browser)</option>
+                <option value="ar">العربية (Arabic)</option>
+                <option value="be">Беларуская (Belarusian)</option>
+                <option value="de">Deutsch (German)</option>
+                <option value="en">English</option>
+                <option value="es">Español (Spanish)</option>
+                <option value="fr">Français (French)</option>
+                <option value="id">Bahasa Indonesia (Indonesian)</option>
+                <option value="it">Italiano (Italian)</option>
+                <option value="ja">日本語 (Japanese)</option>
+                <option value="ko">한국어 (Korean)</option>
+                <option value="nl">Nederlands (Dutch)</option>
+                <option value="pl">Polski (Polish)</option>
+                <option value="pt_BR">Português (Brasil)</option>
+                <option value="ru">Русский (Russian)</option>
+                <option value="tr">Türkçe (Turkish)</option>
+                <option value="uk">Українська (Ukrainian)</option>
+                <option value="vi">Tiếng Việt (Vietnamese)</option>
+                <option value="zh_CN">简体中文 (Chinese Simplified)</option>
+                <option value="zh_TW">繁體中文 (Chinese Traditional)</option>
+            </select>
+            <div class="social-links">
+            <a href="https://github.com/Kustrica/CleanBookmarks" target="_blank" title="GitHub"><img src="icons/github-64.png" alt="GitHub"></a>
+            <a href="https://t.me/kustric" target="_blank" title="Telegram"><img src="icons/telegram-1000-1000.png" alt="Telegram"></a>
+            <a href="https://ko-fi.com/kustrica" target="_blank" title="Ko-fi"><img src="icons/kofi-321-258.png" alt="Ko-fi"></a>
+            <a href="https://www.patreon.com/kustrica" target="_blank" title="Patreon"><img src="icons/patreon-128-140.png" alt="Patreon"></a>
+            <a href="https://boosty.to/kustrica" target="_blank" title="Boosty"><img src="icons/boosty-128-154.png" alt="Boosty"></a>
+            </div>
         </div>
     </div>
 
     <div class="section">
-        <!-- <h2 data-i18n="settingsTitle">Settings</h2> -->
-        
+        <h2 data-i18n="sectionHideTitle">Icon-only bookmarks</h2>
+        <p class="section-desc" data-i18n="sectionHideDesc">Bookmarks whose title is empty or just repeats the address get an invisible title, so only the favicon is shown. Bookmarks with real names are never changed.</p>
+
+        <div class="preview" aria-hidden="true">
+            <div class="preview-col">
+                <p class="preview-caption" data-i18n="previewBefore">Before</p>
+                <div class="preview-row"><span class="fav fav--a">M</span><span class="preview-title">MDN Web Docs</span></div>
+                <div class="preview-row"><span class="fav fav--b">Y</span><span class="preview-title preview-title--muted" data-i18n="previewNoTitle">(no title)</span></div>
+                <div class="preview-row"><span class="fav fav--c">G</span><span class="preview-title">https://www.github.com/</span></div>
+            </div>
+            <div class="preview-col">
+                <p class="preview-caption" data-i18n="previewAfter">After</p>
+                <div class="preview-row"><span class="fav fav--a">M</span><span class="preview-title">MDN Web Docs</span><span class="preview-tag preview-tag--kept" data-i18n="previewKept">kept</span></div>
+                <div class="preview-row"><span class="fav fav--b">Y</span><span class="preview-tag preview-tag--hidden" data-i18n="previewIconOnly">icon only</span></div>
+                <div class="preview-row" id="preview-url-hidden"><span class="fav fav--c">G</span><span class="preview-tag preview-tag--hidden" data-i18n="previewIconOnly">icon only</span></div>
+                <div class="preview-row hidden" id="preview-url-kept"><span class="fav fav--c">G</span><span class="preview-title">https://www.github.com/</span><span class="preview-tag preview-tag--kept" data-i18n="previewKept">kept</span></div>
+            </div>
+        </div>
+
         <div class="control-group">
-            <button id="force-scan-btn" data-i18n="forceHideBtn">
-                Hide
-            </button>
-            <p class="info-text" data-i18n="extensionDescription">Automatically hides bookmark titles (showing only the icon) if the name is left empty.</p>
+            <div class="field-row">
+                <input type="checkbox" id="hide-url-like" class="field-control">
+                <div class="field-body">
+                    <label for="hide-url-like" class="field-label" data-i18n="hideUrlLikeLabel">Also hide titles that repeat the address</label>
+                    <p class="field-hint" data-i18n="hideUrlLikeDesc">Matches the address with or without https://, www. or a trailing slash. Turn off to hide only empty titles.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="field-row">
+                <input type="checkbox" id="auto-hide-new" class="field-control">
+                <div class="field-body">
+                    <label for="auto-hide-new" class="field-label" data-i18n="autoHideNewLabel">Check new and renamed bookmarks automatically</label>
+                    <p class="field-hint" data-i18n="autoHideNewDesc">A bookmark is checked as soon as you create it or change its title.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="field-row">
+                <input type="checkbox" id="scan-on-startup" class="field-control">
+                <div class="field-body">
+                    <label for="scan-on-startup" class="field-label" data-i18n="scanOnStartupLabel">Check all bookmarks when Firefox starts</label>
+                    <p class="field-hint" data-i18n="scanOnStartupDesc">Also runs once after the extension is installed or updated.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="control-group">
+            <div class="field-row">
+                <span class="field-spacer" aria-hidden="true"></span>
+                <div class="field-body">
+                    <div class="actions">
+                        <button type="button" id="force-scan-btn" class="btn btn-primary" data-i18n="forceHideBtn">Hide now</button>
+                        <button type="button" id="restore-btn" class="btn btn-secondary" data-i18n="restoreBtn">Restore titles</button>
+                        <span id="icon-only-count" class="stat"></span>
+                    </div>
+                    <p class="field-hint" data-i18n="manualActionsDesc">“Hide now” checks all bookmarks with the rules above. “Restore titles” gives icon-only bookmarks a visible title again – the site address, for example github.com/Kustrica.</p>
+                    <div id="restore-confirm" class="confirm-box hidden" role="alertdialog">
+                        <p id="restore-confirm-text"></p>
+                        <div class="actions">
+                            <button type="button" id="restore-yes" class="btn btn-primary" data-i18n="restoreConfirmYes">Restore</button>
+                            <button type="button" id="restore-no" class="btn btn-secondary" data-i18n="cancelBtn">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 data-i18n="sectionAddTitle">Quick add</h2>
+        <p class="section-desc" data-i18n="sectionAddDesc">Save the current tab from the bookmark context menu – on the bookmarks toolbar, in the Bookmarks menu or in the sidebar.</p>
+
+        <div class="control-group">
+            <div class="field-row">
+                <input type="checkbox" id="show-add-menu" class="field-control">
+                <div class="field-body">
+                    <label for="show-add-menu" class="field-label" data-i18n="showAddMenuLabel">Show “Add bookmark” in the bookmark context menu</label>
+                    <p class="field-hint" data-i18n="showAddMenuDesc">Right-click a folder to save the current tab into it, or right-click a bookmark to save the tab right after it.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="add-options">
+            <div class="control-group">
+                <div class="field-row">
+                    <span class="field-spacer" aria-hidden="true"></span>
+                    <div class="field-body">
+                        <div class="field-label field-label--heading" data-i18n="addPositionLabel">Where to put it in a folder</div>
+                        <div class="field-row radio-option">
+                            <input type="radio" name="add-position" id="add-position-end" value="end" class="field-control">
+                            <div class="field-body"><label for="add-position-end" class="field-label" data-i18n="addPositionEnd">At the end of the folder</label></div>
+                        </div>
+                        <div class="field-row radio-option">
+                            <input type="radio" name="add-position" id="add-position-start" value="start" class="field-control">
+                            <div class="field-body"><label for="add-position-start" class="field-label" data-i18n="addPositionStart">At the top of the folder</label></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="field-row">
+                    <input type="checkbox" id="add-icon-only" class="field-control">
+                    <div class="field-body">
+                        <label for="add-icon-only" class="field-label" data-i18n="addIconOnlyLabel">Save quick-added bookmarks as icon only</label>
+                        <p class="field-hint" data-i18n="addIconOnlyDesc">The bookmark is saved without a visible title, so only its favicon is shown – handy for a compact toolbar of site icons.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <div id="status-msg"></div>
+    <script src="i18n.js"></script>
     <script src="options.js"></script>
 </body>
 </html>

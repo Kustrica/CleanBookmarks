@@ -11,14 +11,131 @@
     "message": "Options",
     "description": "Title of the options page"
   },
+  "languageUpdated": {
+    "message": "Language updated. Reloading..."
+  },
   "saved": {
     "message": "Saved"
   },
-  "forceHideBtn": {
-    "message": "Hide"
+  "sectionHideTitle": {
+    "message": "Icon-only bookmarks"
   },
-  "hiddenMsg": {
-    "message": "Hidden"
+  "sectionHideDesc": {
+    "message": "Bookmarks whose title is empty or just repeats the address get an invisible title, so only the favicon is shown. Bookmarks with real names are never changed."
+  },
+  "previewBefore": {
+    "message": "Before"
+  },
+  "previewAfter": {
+    "message": "After"
+  },
+  "previewNoTitle": {
+    "message": "(no title)"
+  },
+  "previewKept": {
+    "message": "kept"
+  },
+  "previewIconOnly": {
+    "message": "icon only"
+  },
+  "hideUrlLikeLabel": {
+    "message": "Also hide titles that repeat the address"
+  },
+  "hideUrlLikeDesc": {
+    "message": "Matches the address with or without https://, www. or a trailing slash. Turn off to hide only empty titles."
+  },
+  "autoHideNewLabel": {
+    "message": "Check new and renamed bookmarks automatically"
+  },
+  "autoHideNewDesc": {
+    "message": "A bookmark is checked as soon as you create it or change its title."
+  },
+  "scanOnStartupLabel": {
+    "message": "Check all bookmarks when Firefox starts"
+  },
+  "scanOnStartupDesc": {
+    "message": "Also runs once after the extension is installed or updated."
+  },
+  "forceHideBtn": {
+    "message": "Hide now"
+  },
+  "restoreBtn": {
+    "message": "Restore titles"
+  },
+  "manualActionsDesc": {
+    "message": "“Hide now” checks all bookmarks with the rules above. “Restore titles” gives icon-only bookmarks a visible title again – the site address, for example github.com/Kustrica."
+  },
+  "iconOnlyCount": {
+    "message": "Icon-only bookmarks: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "hiddenCountMsg": {
+    "message": "Titles hidden: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "nothingToHideMsg": {
+    "message": "Nothing to hide"
+  },
+  "restoreConfirm": {
+    "message": "Icon-only bookmarks: $COUNT$. Give them a visible title (the site address)? Automatic checks will be turned off, otherwise the titles would be hidden again.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "restoreConfirmYes": {
+    "message": "Restore"
+  },
+  "cancelBtn": {
+    "message": "Cancel"
+  },
+  "restoredCountMsg": {
+    "message": "Titles restored: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "sectionAddTitle": {
+    "message": "Quick add"
+  },
+  "sectionAddDesc": {
+    "message": "Save the current tab from the bookmark context menu – on the bookmarks toolbar, in the Bookmarks menu or in the sidebar."
+  },
+  "showAddMenuLabel": {
+    "message": "Show “Add bookmark” in the bookmark context menu"
+  },
+  "showAddMenuDesc": {
+    "message": "Right-click a folder to save the current tab into it, or right-click a bookmark to save the tab right after it."
+  },
+  "addPositionLabel": {
+    "message": "Where to put it in a folder"
+  },
+  "addPositionEnd": {
+    "message": "At the end of the folder"
+  },
+  "addPositionStart": {
+    "message": "At the top of the folder"
+  },
+  "addIconOnlyLabel": {
+    "message": "Save quick-added bookmarks as icon only"
+  },
+  "addIconOnlyDesc": {
+    "message": "The bookmark is saved without a visible title, so only its favicon is shown – handy for a compact toolbar of site icons."
   },
   "addBookmarkMenu": {
     "message": "Add bookmark"

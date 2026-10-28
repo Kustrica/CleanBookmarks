@@ -11,14 +11,131 @@
     "message": "Pengaturan",
     "description": "Title of the options page"
   },
+  "languageUpdated": {
+    "message": "Bahasa diperbarui. Memuat ulang..."
+  },
   "saved": {
     "message": "Disimpan"
   },
-  "forceHideBtn": {
-    "message": "Sembunyikan"
+  "sectionHideTitle": {
+    "message": "Bookmark hanya ikon"
   },
-  "hiddenMsg": {
-    "message": "Disembunyikan"
+  "sectionHideDesc": {
+    "message": "Bookmark yang judulnya kosong atau hanya mengulang alamat diberi judul tak terlihat, sehingga hanya ikon situs yang tampil. Bookmark dengan nama asli tidak pernah diubah."
+  },
+  "previewBefore": {
+    "message": "Sebelum"
+  },
+  "previewAfter": {
+    "message": "Sesudah"
+  },
+  "previewNoTitle": {
+    "message": "(tanpa judul)"
+  },
+  "previewKept": {
+    "message": "tetap"
+  },
+  "previewIconOnly": {
+    "message": "hanya ikon"
+  },
+  "hideUrlLikeLabel": {
+    "message": "Sembunyikan juga judul yang mengulang alamat"
+  },
+  "hideUrlLikeDesc": {
+    "message": "Alamat dikenali dengan atau tanpa https://, www. atau garis miring di akhir. Matikan untuk hanya menyembunyikan judul kosong."
+  },
+  "autoHideNewLabel": {
+    "message": "Periksa bookmark baru dan yang diganti namanya secara otomatis"
+  },
+  "autoHideNewDesc": {
+    "message": "Bookmark diperiksa begitu Anda membuatnya atau mengubah judulnya."
+  },
+  "scanOnStartupLabel": {
+    "message": "Periksa semua bookmark saat Firefox dimulai"
+  },
+  "scanOnStartupDesc": {
+    "message": "Juga dijalankan sekali setelah ekstensi dipasang atau diperbarui."
+  },
+  "forceHideBtn": {
+    "message": "Sembunyikan sekarang"
+  },
+  "restoreBtn": {
+    "message": "Pulihkan judul"
+  },
+  "manualActionsDesc": {
+    "message": "“Sembunyikan sekarang” memeriksa semua bookmark dengan aturan di atas. “Pulihkan judul” memberi bookmark hanya ikon judul yang terlihat lagi – alamat situs, misalnya github.com/Kustrica."
+  },
+  "iconOnlyCount": {
+    "message": "Bookmark hanya ikon: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "hiddenCountMsg": {
+    "message": "Judul disembunyikan: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "nothingToHideMsg": {
+    "message": "Tidak ada yang perlu disembunyikan"
+  },
+  "restoreConfirm": {
+    "message": "Bookmark hanya ikon: $COUNT$. Beri judul yang terlihat (alamat situs)? Pemeriksaan otomatis akan dimatikan, jika tidak judul akan disembunyikan lagi.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "restoreConfirmYes": {
+    "message": "Pulihkan"
+  },
+  "cancelBtn": {
+    "message": "Batal"
+  },
+  "restoredCountMsg": {
+    "message": "Judul dipulihkan: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "sectionAddTitle": {
+    "message": "Tambah cepat"
+  },
+  "sectionAddDesc": {
+    "message": "Simpan tab saat ini dari menu konteks bookmark – di bilah bookmark, menu Bookmark, atau bilah samping."
+  },
+  "showAddMenuLabel": {
+    "message": "Tampilkan “Tambahkan bookmark” di menu konteks bookmark"
+  },
+  "showAddMenuDesc": {
+    "message": "Klik kanan folder untuk menyimpan tab saat ini ke dalamnya, atau klik kanan bookmark untuk menyimpan tab tepat setelahnya."
+  },
+  "addPositionLabel": {
+    "message": "Posisi di dalam folder"
+  },
+  "addPositionEnd": {
+    "message": "Di akhir folder"
+  },
+  "addPositionStart": {
+    "message": "Di awal folder"
+  },
+  "addIconOnlyLabel": {
+    "message": "Simpan bookmark tambah cepat hanya sebagai ikon"
+  },
+  "addIconOnlyDesc": {
+    "message": "Bookmark disimpan tanpa judul yang terlihat, sehingga hanya ikonnya yang tampil – praktis untuk bilah ikon situs yang ringkas."
   },
   "addBookmarkMenu": {
     "message": "Tambahkan bookmark"

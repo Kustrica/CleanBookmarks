@@ -11,14 +11,131 @@
     "message": "設定",
     "description": "Title of the options page"
   },
+  "languageUpdated": {
+    "message": "言語を変更しました。再読み込みしています..."
+  },
   "saved": {
     "message": "保存しました"
   },
-  "forceHideBtn": {
-    "message": "非表示"
+  "sectionHideTitle": {
+    "message": "アイコンだけのブックマーク"
   },
-  "hiddenMsg": {
-    "message": "非表示にしました"
+  "sectionHideDesc": {
+    "message": "タイトルが空、またはアドレスを繰り返しているだけのブックマークには見えないタイトルが付き、サイトのアイコンだけが表示されます。本当の名前があるブックマークは変更されません。"
+  },
+  "previewBefore": {
+    "message": "変更前"
+  },
+  "previewAfter": {
+    "message": "変更後"
+  },
+  "previewNoTitle": {
+    "message": "（タイトルなし）"
+  },
+  "previewKept": {
+    "message": "そのまま"
+  },
+  "previewIconOnly": {
+    "message": "アイコンのみ"
+  },
+  "hideUrlLikeLabel": {
+    "message": "アドレスを繰り返すだけのタイトルも隠す"
+  },
+  "hideUrlLikeDesc": {
+    "message": "https://、www.、末尾のスラッシュの有無にかかわらずアドレスを認識します。オフにすると空のタイトルだけを隠します。"
+  },
+  "autoHideNewLabel": {
+    "message": "新しいブックマークと名前を変えたブックマークを自動でチェック"
+  },
+  "autoHideNewDesc": {
+    "message": "ブックマークを作成したり、タイトルを変更したりするとすぐにチェックします。"
+  },
+  "scanOnStartupLabel": {
+    "message": "Firefox の起動時にすべてのブックマークをチェック"
+  },
+  "scanOnStartupDesc": {
+    "message": "拡張機能のインストール後や更新後にも 1 回実行されます。"
+  },
+  "forceHideBtn": {
+    "message": "今すぐ隠す"
+  },
+  "restoreBtn": {
+    "message": "タイトルを戻す"
+  },
+  "manualActionsDesc": {
+    "message": "「今すぐ隠す」は上のルールですべてのブックマークをチェックします。「タイトルを戻す」はアイコンだけのブックマークに再び見えるタイトル（サイトのアドレス、例：github.com/Kustrica）を付けます。"
+  },
+  "iconOnlyCount": {
+    "message": "アイコンだけのブックマーク：$COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "hiddenCountMsg": {
+    "message": "隠したタイトル：$COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "nothingToHideMsg": {
+    "message": "隠すものはありません"
+  },
+  "restoreConfirm": {
+    "message": "アイコンだけのブックマーク：$COUNT$。見えるタイトル（サイトのアドレス）を付けますか？自動チェックはオフになります。オフにしないとタイトルが再び隠れてしまいます。",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "restoreConfirmYes": {
+    "message": "戻す"
+  },
+  "cancelBtn": {
+    "message": "キャンセル"
+  },
+  "restoredCountMsg": {
+    "message": "戻したタイトル：$COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "sectionAddTitle": {
+    "message": "すばやく追加"
+  },
+  "sectionAddDesc": {
+    "message": "ブックマークのコンテキストメニューから現在のタブを保存します。ブックマークツールバー、ブックマークメニュー、サイドバーで使えます。"
+  },
+  "showAddMenuLabel": {
+    "message": "ブックマークのコンテキストメニューに「ブックマークを追加」を表示"
+  },
+  "showAddMenuDesc": {
+    "message": "フォルダーを右クリックすると現在のタブをそのフォルダーに、ブックマークを右クリックするとそのすぐ後ろに保存します。"
+  },
+  "addPositionLabel": {
+    "message": "フォルダー内の追加位置"
+  },
+  "addPositionEnd": {
+    "message": "フォルダーの末尾"
+  },
+  "addPositionStart": {
+    "message": "フォルダーの先頭"
+  },
+  "addIconOnlyLabel": {
+    "message": "すばやく追加したブックマークをアイコンだけで保存"
+  },
+  "addIconOnlyDesc": {
+    "message": "見えるタイトルなしで保存されるため、アイコンだけが表示されます。サイトのアイコンを並べたコンパクトなツールバーに便利です。"
   },
   "addBookmarkMenu": {
     "message": "ブックマークを追加"

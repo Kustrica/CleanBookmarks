@@ -11,14 +11,131 @@
     "message": "设置",
     "description": "Title of the options page"
   },
+  "languageUpdated": {
+    "message": "语言已更新，正在重新加载..."
+  },
   "saved": {
     "message": "已保存"
   },
-  "forceHideBtn": {
-    "message": "隐藏"
+  "sectionHideTitle": {
+    "message": "仅图标书签"
   },
-  "hiddenMsg": {
-    "message": "已隐藏"
+  "sectionHideDesc": {
+    "message": "标题为空或只是重复网址的书签会被设置为不可见标题，只显示网站图标。有真实名称的书签绝不会被修改。"
+  },
+  "previewBefore": {
+    "message": "之前"
+  },
+  "previewAfter": {
+    "message": "之后"
+  },
+  "previewNoTitle": {
+    "message": "（无标题）"
+  },
+  "previewKept": {
+    "message": "保留"
+  },
+  "previewIconOnly": {
+    "message": "仅图标"
+  },
+  "hideUrlLikeLabel": {
+    "message": "同时隐藏重复网址的标题"
+  },
+  "hideUrlLikeDesc": {
+    "message": "无论是否带有 https://、www. 或末尾斜杠都能识别网址。关闭后只隐藏空标题。"
+  },
+  "autoHideNewLabel": {
+    "message": "自动检查新建和重命名的书签"
+  },
+  "autoHideNewDesc": {
+    "message": "在你创建书签或修改其标题时立即检查。"
+  },
+  "scanOnStartupLabel": {
+    "message": "Firefox 启动时检查所有书签"
+  },
+  "scanOnStartupDesc": {
+    "message": "安装或更新扩展后也会运行一次。"
+  },
+  "forceHideBtn": {
+    "message": "立即隐藏"
+  },
+  "restoreBtn": {
+    "message": "恢复标题"
+  },
+  "manualActionsDesc": {
+    "message": "“立即隐藏”按上述规则检查所有书签。“恢复标题”会为仅图标书签重新设置可见标题——网站地址，例如 github.com/Kustrica。"
+  },
+  "iconOnlyCount": {
+    "message": "仅图标书签：$COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "hiddenCountMsg": {
+    "message": "已隐藏标题：$COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "nothingToHideMsg": {
+    "message": "没有需要隐藏的内容"
+  },
+  "restoreConfirm": {
+    "message": "仅图标书签：$COUNT$。要为它们设置可见标题（网站地址）吗？自动检查将被关闭，否则标题会再次被隐藏。",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "restoreConfirmYes": {
+    "message": "恢复"
+  },
+  "cancelBtn": {
+    "message": "取消"
+  },
+  "restoredCountMsg": {
+    "message": "已恢复标题：$COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "sectionAddTitle": {
+    "message": "快速添加"
+  },
+  "sectionAddDesc": {
+    "message": "从书签右键菜单保存当前标签页——适用于书签工具栏、书签菜单和侧栏。"
+  },
+  "showAddMenuLabel": {
+    "message": "在书签右键菜单中显示“添加书签”"
+  },
+  "showAddMenuDesc": {
+    "message": "右键点击文件夹可将当前标签页保存到其中，右键点击书签可将标签页保存到它后面。"
+  },
+  "addPositionLabel": {
+    "message": "在文件夹中的位置"
+  },
+  "addPositionEnd": {
+    "message": "文件夹末尾"
+  },
+  "addPositionStart": {
+    "message": "文件夹顶部"
+  },
+  "addIconOnlyLabel": {
+    "message": "快速添加的书签仅保存为图标"
+  },
+  "addIconOnlyDesc": {
+    "message": "书签保存时没有可见标题，只显示图标——适合打造紧凑的网站图标工具栏。"
   },
   "addBookmarkMenu": {
     "message": "添加书签"

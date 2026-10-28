@@ -11,14 +11,131 @@
     "message": "Ayarlar",
     "description": "Title of the options page"
   },
+  "languageUpdated": {
+    "message": "Dil güncellendi. Yeniden yükleniyor..."
+  },
   "saved": {
     "message": "Kaydedildi"
   },
-  "forceHideBtn": {
-    "message": "Gizle"
+  "sectionHideTitle": {
+    "message": "Yalnızca simge olan yer imleri"
   },
-  "hiddenMsg": {
-    "message": "Gizlendi"
+  "sectionHideDesc": {
+    "message": "Başlığı boş olan veya yalnızca adresi tekrarlayan yer imlerine görünmez bir başlık verilir, böylece yalnızca site simgesi görünür. Gerçek adı olan yer imleri asla değiştirilmez."
+  },
+  "previewBefore": {
+    "message": "Önce"
+  },
+  "previewAfter": {
+    "message": "Sonra"
+  },
+  "previewNoTitle": {
+    "message": "(başlık yok)"
+  },
+  "previewKept": {
+    "message": "korunur"
+  },
+  "previewIconOnly": {
+    "message": "yalnızca simge"
+  },
+  "hideUrlLikeLabel": {
+    "message": "Adresi tekrarlayan başlıkları da gizle"
+  },
+  "hideUrlLikeDesc": {
+    "message": "Adres https://, www. veya sondaki eğik çizgiyle ya da onlar olmadan tanınır. Yalnızca boş başlıkları gizlemek için kapatın."
+  },
+  "autoHideNewLabel": {
+    "message": "Yeni ve yeniden adlandırılan yer imlerini otomatik denetle"
+  },
+  "autoHideNewDesc": {
+    "message": "Bir yer imi, onu oluşturduğunuz veya başlığını değiştirdiğiniz anda denetlenir."
+  },
+  "scanOnStartupLabel": {
+    "message": "Firefox açılırken tüm yer imlerini denetle"
+  },
+  "scanOnStartupDesc": {
+    "message": "Eklenti yüklendikten veya güncellendikten sonra da bir kez çalışır."
+  },
+  "forceHideBtn": {
+    "message": "Şimdi gizle"
+  },
+  "restoreBtn": {
+    "message": "Başlıkları geri getir"
+  },
+  "manualActionsDesc": {
+    "message": "“Şimdi gizle” tüm yer imlerini yukarıdaki kurallara göre denetler. “Başlıkları geri getir” yalnızca simge olan yer imlerine yeniden görünür bir başlık verir – site adresi, örneğin github.com/Kustrica."
+  },
+  "iconOnlyCount": {
+    "message": "Yalnızca simge olan yer imleri: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "hiddenCountMsg": {
+    "message": "Gizlenen başlıklar: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "nothingToHideMsg": {
+    "message": "Gizlenecek bir şey yok"
+  },
+  "restoreConfirm": {
+    "message": "Yalnızca simge olan yer imleri: $COUNT$. Bunlara görünür bir başlık (site adresi) verilsin mi? Otomatik denetimler kapatılacak, aksi halde başlıklar yeniden gizlenirdi.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "restoreConfirmYes": {
+    "message": "Geri getir"
+  },
+  "cancelBtn": {
+    "message": "İptal"
+  },
+  "restoredCountMsg": {
+    "message": "Geri getirilen başlıklar: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "sectionAddTitle": {
+    "message": "Hızlı ekleme"
+  },
+  "sectionAddDesc": {
+    "message": "Geçerli sekmeyi yer imi bağlam menüsünden kaydedin – yer imleri araç çubuğunda, Yer imleri menüsünde veya kenar çubuğunda."
+  },
+  "showAddMenuLabel": {
+    "message": "Yer imi bağlam menüsünde “Yer imi ekle” öğesini göster"
+  },
+  "showAddMenuDesc": {
+    "message": "Geçerli sekmeyi bir klasöre kaydetmek için klasöre, hemen ardına kaydetmek için bir yer imine sağ tıklayın."
+  },
+  "addPositionLabel": {
+    "message": "Klasörde nereye eklensin"
+  },
+  "addPositionEnd": {
+    "message": "Klasörün sonuna"
+  },
+  "addPositionStart": {
+    "message": "Klasörün başına"
+  },
+  "addIconOnlyLabel": {
+    "message": "Hızlı eklenen yer imlerini yalnızca simge olarak kaydet"
+  },
+  "addIconOnlyDesc": {
+    "message": "Yer imi görünür başlık olmadan kaydedilir, böylece yalnızca simgesi görünür – site simgelerinden oluşan kompakt bir araç çubuğu için kullanışlı."
   },
   "addBookmarkMenu": {
     "message": "Yer imi ekle"

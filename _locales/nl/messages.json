@@ -11,14 +11,131 @@
     "message": "Instellingen",
     "description": "Title of the options page"
   },
+  "languageUpdated": {
+    "message": "Taal bijgewerkt. Opnieuw laden..."
+  },
   "saved": {
     "message": "Opgeslagen"
   },
-  "forceHideBtn": {
-    "message": "Verbergen"
+  "sectionHideTitle": {
+    "message": "Bladwijzers als pictogram"
   },
-  "hiddenMsg": {
-    "message": "Verborgen"
+  "sectionHideDesc": {
+    "message": "Bladwijzers met een lege titel of een titel die alleen het adres herhaalt, krijgen een onzichtbare titel, zodat alleen het websitepictogram zichtbaar is. Bladwijzers met een echte naam worden nooit gewijzigd."
+  },
+  "previewBefore": {
+    "message": "Voor"
+  },
+  "previewAfter": {
+    "message": "Na"
+  },
+  "previewNoTitle": {
+    "message": "(geen titel)"
+  },
+  "previewKept": {
+    "message": "blijft"
+  },
+  "previewIconOnly": {
+    "message": "alleen pictogram"
+  },
+  "hideUrlLikeLabel": {
+    "message": "Ook titels verbergen die het adres herhalen"
+  },
+  "hideUrlLikeDesc": {
+    "message": "Het adres wordt herkend met of zonder https://, www. of slash aan het eind. Schakel uit om alleen lege titels te verbergen."
+  },
+  "autoHideNewLabel": {
+    "message": "Nieuwe en hernoemde bladwijzers automatisch controleren"
+  },
+  "autoHideNewDesc": {
+    "message": "Een bladwijzer wordt gecontroleerd zodra u hem maakt of de titel wijzigt."
+  },
+  "scanOnStartupLabel": {
+    "message": "Alle bladwijzers controleren bij het starten van Firefox"
+  },
+  "scanOnStartupDesc": {
+    "message": "Wordt ook eenmaal uitgevoerd na installatie of update van de extensie."
+  },
+  "forceHideBtn": {
+    "message": "Nu verbergen"
+  },
+  "restoreBtn": {
+    "message": "Titels herstellen"
+  },
+  "manualActionsDesc": {
+    "message": "‘Nu verbergen’ controleert alle bladwijzers met de regels hierboven. ‘Titels herstellen’ geeft bladwijzers die als pictogram worden getoond weer een zichtbare titel – het adres van de website, bijvoorbeeld github.com/Kustrica."
+  },
+  "iconOnlyCount": {
+    "message": "Bladwijzers als pictogram: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "hiddenCountMsg": {
+    "message": "Verborgen titels: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "nothingToHideMsg": {
+    "message": "Niets te verbergen"
+  },
+  "restoreConfirm": {
+    "message": "Bladwijzers als pictogram: $COUNT$. Ze een zichtbare titel geven (het websiteadres)? Automatische controles worden uitgeschakeld, anders zouden de titels weer worden verborgen.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "restoreConfirmYes": {
+    "message": "Herstellen"
+  },
+  "cancelBtn": {
+    "message": "Annuleren"
+  },
+  "restoredCountMsg": {
+    "message": "Herstelde titels: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "sectionAddTitle": {
+    "message": "Snel toevoegen"
+  },
+  "sectionAddDesc": {
+    "message": "Sla het huidige tabblad op via het contextmenu van bladwijzers – op de bladwijzerwerkbalk, in het menu Bladwijzers of in de zijbalk."
+  },
+  "showAddMenuLabel": {
+    "message": "‘Bladwijzer toevoegen’ tonen in het contextmenu van bladwijzers"
+  },
+  "showAddMenuDesc": {
+    "message": "Klik met rechts op een map om het huidige tabblad daarin op te slaan, of op een bladwijzer om het tabblad er direct na op te slaan."
+  },
+  "addPositionLabel": {
+    "message": "Plaats in de map"
+  },
+  "addPositionEnd": {
+    "message": "Aan het eind van de map"
+  },
+  "addPositionStart": {
+    "message": "Bovenaan in de map"
+  },
+  "addIconOnlyLabel": {
+    "message": "Snel toegevoegde bladwijzers alleen als pictogram opslaan"
+  },
+  "addIconOnlyDesc": {
+    "message": "De bladwijzer wordt zonder zichtbare titel opgeslagen, zodat alleen het pictogram verschijnt – handig voor een compacte balk met websitepictogrammen."
   },
   "addBookmarkMenu": {
     "message": "Bladwijzer toevoegen"

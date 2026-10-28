@@ -11,14 +11,131 @@
     "message": "Configuración",
     "description": "Title of the options page"
   },
+  "languageUpdated": {
+    "message": "Idioma actualizado. Recargando..."
+  },
   "saved": {
     "message": "Guardado"
   },
-  "forceHideBtn": {
-    "message": "Ocultar"
+  "sectionHideTitle": {
+    "message": "Marcadores solo con icono"
   },
-  "hiddenMsg": {
-    "message": "Oculto"
+  "sectionHideDesc": {
+    "message": "Los marcadores cuyo título está vacío o solo repite la dirección reciben un título invisible, así que solo se ve el icono del sitio. Los marcadores con nombres reales nunca se modifican."
+  },
+  "previewBefore": {
+    "message": "Antes"
+  },
+  "previewAfter": {
+    "message": "Después"
+  },
+  "previewNoTitle": {
+    "message": "(sin título)"
+  },
+  "previewKept": {
+    "message": "se mantiene"
+  },
+  "previewIconOnly": {
+    "message": "solo icono"
+  },
+  "hideUrlLikeLabel": {
+    "message": "Ocultar también los títulos que repiten la dirección"
+  },
+  "hideUrlLikeDesc": {
+    "message": "La dirección se reconoce con o sin https://, www. o barra final. Desactívalo para ocultar solo los títulos vacíos."
+  },
+  "autoHideNewLabel": {
+    "message": "Comprobar automáticamente los marcadores nuevos y renombrados"
+  },
+  "autoHideNewDesc": {
+    "message": "Un marcador se comprueba en cuanto lo creas o cambias su título."
+  },
+  "scanOnStartupLabel": {
+    "message": "Comprobar todos los marcadores al iniciar Firefox"
+  },
+  "scanOnStartupDesc": {
+    "message": "También se ejecuta una vez tras instalar o actualizar la extensión."
+  },
+  "forceHideBtn": {
+    "message": "Ocultar ahora"
+  },
+  "restoreBtn": {
+    "message": "Restaurar títulos"
+  },
+  "manualActionsDesc": {
+    "message": "«Ocultar ahora» comprueba todos los marcadores con las reglas de arriba. «Restaurar títulos» vuelve a dar un título visible a los marcadores solo con icono: la dirección del sitio, por ejemplo github.com/Kustrica."
+  },
+  "iconOnlyCount": {
+    "message": "Marcadores solo con icono: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "hiddenCountMsg": {
+    "message": "Títulos ocultados: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "nothingToHideMsg": {
+    "message": "No hay nada que ocultar"
+  },
+  "restoreConfirm": {
+    "message": "Marcadores solo con icono: $COUNT$. ¿Darles un título visible (la dirección del sitio)? Las comprobaciones automáticas se desactivarán; si no, los títulos volverían a ocultarse.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "restoreConfirmYes": {
+    "message": "Restaurar"
+  },
+  "cancelBtn": {
+    "message": "Cancelar"
+  },
+  "restoredCountMsg": {
+    "message": "Títulos restaurados: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "sectionAddTitle": {
+    "message": "Añadir rápido"
+  },
+  "sectionAddDesc": {
+    "message": "Guarda la pestaña actual desde el menú contextual de marcadores: en la barra de marcadores, en el menú Marcadores o en la barra lateral."
+  },
+  "showAddMenuLabel": {
+    "message": "Mostrar «Añadir marcador» en el menú contextual de marcadores"
+  },
+  "showAddMenuDesc": {
+    "message": "Haz clic derecho en una carpeta para guardar en ella la pestaña actual, o en un marcador para guardar la pestaña justo después."
+  },
+  "addPositionLabel": {
+    "message": "Dónde colocarlo en la carpeta"
+  },
+  "addPositionEnd": {
+    "message": "Al final de la carpeta"
+  },
+  "addPositionStart": {
+    "message": "Al principio de la carpeta"
+  },
+  "addIconOnlyLabel": {
+    "message": "Guardar los marcadores añadidos rápido solo con icono"
+  },
+  "addIconOnlyDesc": {
+    "message": "El marcador se guarda sin título visible, así que solo se ve su icono: ideal para una barra compacta de iconos de sitios."
   },
   "addBookmarkMenu": {
     "message": "Añadir marcador"

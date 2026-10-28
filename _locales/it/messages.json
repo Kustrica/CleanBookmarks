@@ -11,14 +11,131 @@
     "message": "Impostazioni",
     "description": "Title of the options page"
   },
+  "languageUpdated": {
+    "message": "Lingua aggiornata. Ricaricamento..."
+  },
   "saved": {
     "message": "Salvato"
   },
-  "forceHideBtn": {
-    "message": "Nascondi"
+  "sectionHideTitle": {
+    "message": "Segnalibri solo icona"
   },
-  "hiddenMsg": {
-    "message": "Nascosto"
+  "sectionHideDesc": {
+    "message": "I segnalibri con titolo vuoto o che ripete solo l’indirizzo ricevono un titolo invisibile, così resta visibile solo l’icona del sito. I segnalibri con un nome vero non vengono mai modificati."
+  },
+  "previewBefore": {
+    "message": "Prima"
+  },
+  "previewAfter": {
+    "message": "Dopo"
+  },
+  "previewNoTitle": {
+    "message": "(senza titolo)"
+  },
+  "previewKept": {
+    "message": "invariato"
+  },
+  "previewIconOnly": {
+    "message": "solo icona"
+  },
+  "hideUrlLikeLabel": {
+    "message": "Nascondi anche i titoli che ripetono l’indirizzo"
+  },
+  "hideUrlLikeDesc": {
+    "message": "L’indirizzo viene riconosciuto con o senza https://, www. o barra finale. Disattiva per nascondere solo i titoli vuoti."
+  },
+  "autoHideNewLabel": {
+    "message": "Controlla automaticamente i segnalibri nuovi e rinominati"
+  },
+  "autoHideNewDesc": {
+    "message": "Un segnalibro viene controllato appena lo crei o ne modifichi il titolo."
+  },
+  "scanOnStartupLabel": {
+    "message": "Controlla tutti i segnalibri all’avvio di Firefox"
+  },
+  "scanOnStartupDesc": {
+    "message": "Viene eseguito anche una volta dopo l’installazione o l’aggiornamento dell’estensione."
+  },
+  "forceHideBtn": {
+    "message": "Nascondi ora"
+  },
+  "restoreBtn": {
+    "message": "Ripristina titoli"
+  },
+  "manualActionsDesc": {
+    "message": "«Nascondi ora» controlla tutti i segnalibri con le regole sopra. «Ripristina titoli» ridà un titolo visibile ai segnalibri solo icona: l’indirizzo del sito, ad esempio github.com/Kustrica."
+  },
+  "iconOnlyCount": {
+    "message": "Segnalibri solo icona: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "hiddenCountMsg": {
+    "message": "Titoli nascosti: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "nothingToHideMsg": {
+    "message": "Niente da nascondere"
+  },
+  "restoreConfirm": {
+    "message": "Segnalibri solo icona: $COUNT$. Dare loro un titolo visibile (l’indirizzo del sito)? I controlli automatici verranno disattivati, altrimenti i titoli verrebbero nascosti di nuovo.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "restoreConfirmYes": {
+    "message": "Ripristina"
+  },
+  "cancelBtn": {
+    "message": "Annulla"
+  },
+  "restoredCountMsg": {
+    "message": "Titoli ripristinati: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "sectionAddTitle": {
+    "message": "Aggiunta rapida"
+  },
+  "sectionAddDesc": {
+    "message": "Salva la scheda corrente dal menu contestuale dei segnalibri: nella barra dei segnalibri, nel menu Segnalibri o nella barra laterale."
+  },
+  "showAddMenuLabel": {
+    "message": "Mostra «Aggiungi segnalibro» nel menu contestuale dei segnalibri"
+  },
+  "showAddMenuDesc": {
+    "message": "Fai clic destro su una cartella per salvarvi la scheda corrente, o su un segnalibro per salvare la scheda subito dopo."
+  },
+  "addPositionLabel": {
+    "message": "Dove inserirlo nella cartella"
+  },
+  "addPositionEnd": {
+    "message": "In fondo alla cartella"
+  },
+  "addPositionStart": {
+    "message": "In cima alla cartella"
+  },
+  "addIconOnlyLabel": {
+    "message": "Salva i segnalibri aggiunti rapidamente solo come icona"
+  },
+  "addIconOnlyDesc": {
+    "message": "Il segnalibro viene salvato senza titolo visibile, così si vede solo la sua icona: comodo per una barra compatta di icone dei siti."
   },
   "addBookmarkMenu": {
     "message": "Aggiungi segnalibro"

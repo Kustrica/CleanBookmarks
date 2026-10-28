@@ -11,16 +11,133 @@
     "message": "設定",
     "description": "Title of the options page"
   },
+  "languageUpdated": {
+    "message": "語言已更新，正在重新載入..."
+  },
   "saved": {
     "message": "已儲存"
   },
-  "forceHideBtn": {
-    "message": "隱藏"
+  "sectionHideTitle": {
+    "message": "僅圖示書籤"
   },
-  "hiddenMsg": {
-    "message": "已隱藏"
+  "sectionHideDesc": {
+    "message": "標題為空白或只是重複網址的書籤會被設為隱形標題，只顯示網站圖示。有真正名稱的書籤絕不會被修改。"
+  },
+  "previewBefore": {
+    "message": "之前"
+  },
+  "previewAfter": {
+    "message": "之後"
+  },
+  "previewNoTitle": {
+    "message": "（無標題）"
+  },
+  "previewKept": {
+    "message": "保留"
+  },
+  "previewIconOnly": {
+    "message": "僅圖示"
+  },
+  "hideUrlLikeLabel": {
+    "message": "同時隱藏重複網址的標題"
+  },
+  "hideUrlLikeDesc": {
+    "message": "無論是否帶有 https://、www. 或結尾斜線都能辨識網址。關閉後只隱藏空白標題。"
+  },
+  "autoHideNewLabel": {
+    "message": "自動檢查新增和重新命名的書籤"
+  },
+  "autoHideNewDesc": {
+    "message": "在你建立書籤或修改其標題時立即檢查。"
+  },
+  "scanOnStartupLabel": {
+    "message": "Firefox 啟動時檢查所有書籤"
+  },
+  "scanOnStartupDesc": {
+    "message": "安裝或更新擴充套件後也會執行一次。"
+  },
+  "forceHideBtn": {
+    "message": "立即隱藏"
+  },
+  "restoreBtn": {
+    "message": "還原標題"
+  },
+  "manualActionsDesc": {
+    "message": "「立即隱藏」依上述規則檢查所有書籤。「還原標題」會為僅圖示書籤重新設定可見標題——網站位址，例如 github.com/Kustrica。"
+  },
+  "iconOnlyCount": {
+    "message": "僅圖示書籤：$COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "hiddenCountMsg": {
+    "message": "已隱藏標題：$COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "nothingToHideMsg": {
+    "message": "沒有需要隱藏的項目"
+  },
+  "restoreConfirm": {
+    "message": "僅圖示書籤：$COUNT$。要為它們設定可見標題（網站位址）嗎？自動檢查將被關閉，否則標題會再次被隱藏。",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "restoreConfirmYes": {
+    "message": "還原"
+  },
+  "cancelBtn": {
+    "message": "取消"
+  },
+  "restoredCountMsg": {
+    "message": "已還原標題：$COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "sectionAddTitle": {
+    "message": "快速新增"
+  },
+  "sectionAddDesc": {
+    "message": "從書籤右鍵選單儲存目前分頁——適用於書籤工具列、書籤選單和側邊欄。"
+  },
+  "showAddMenuLabel": {
+    "message": "在書籤右鍵選單中顯示「新增書籤」"
+  },
+  "showAddMenuDesc": {
+    "message": "在資料夾上按右鍵可將目前分頁儲存到其中，在書籤上按右鍵可將分頁儲存到它後面。"
+  },
+  "addPositionLabel": {
+    "message": "在資料夾中的位置"
+  },
+  "addPositionEnd": {
+    "message": "資料夾末尾"
+  },
+  "addPositionStart": {
+    "message": "資料夾頂端"
+  },
+  "addIconOnlyLabel": {
+    "message": "快速新增的書籤僅儲存為圖示"
+  },
+  "addIconOnlyDesc": {
+    "message": "書籤儲存時沒有可見標題，只顯示圖示——適合打造精簡的網站圖示工具列。"
   },
   "addBookmarkMenu": {
-    "message": "添加書籤"
+    "message": "新增書籤"
   }
 }
