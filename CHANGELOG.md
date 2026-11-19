@@ -1,5 +1,8 @@
 # Changelog
 
+1.2.1
+- Updated the extension icon.
+
 1.2
 - Interface language selector in the Options header, as in Workspaces and Highlight Opened Tabs: Auto (browser language) or any of the 19 languages. The chosen language is applied to the Options page and to the "Add bookmark" context menu item, without restarting Firefox.
 - Redesigned Options page: dark cards in the same style as the other extensions, a live before/after example, and clear descriptions for every setting.
