@@ -1,5 +1,11 @@
 # Changelog
 
+1.2.4
+- Improved icon contrast and standardized the checkboxes in Settings.
+
+1.2.3
+- Refreshed the GitHub and Patreon icons in Settings.
+
 1.2.2
 - Updated the Telegram contact and added a 128 px icon for Firefox Add-ons Manager.
 

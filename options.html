@@ -243,7 +243,19 @@
             body { padding: 20px; }
             .preview { grid-template-columns: minmax(0, 1fr); }
         }
-    </style>
+
+        img[src$="/github-64.png"], img[src$="/patreon-128-140.png"] {
+            filter: brightness(0) invert(1);
+        }
+
+        input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            flex: 0 0 18px;
+            accent-color: #ff9400;
+            cursor: pointer;
+        }
+</style>
 </head>
 <body>
     <div class="page-header">
