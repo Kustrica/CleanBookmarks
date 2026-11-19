@@ -1,4 +1,5 @@
 {
+    "iconPickerLicenses": {"message":"아이콘 라이선스"},
   "extensionName": {
     "message": "Clean Bookmarks",
     "description": "Name of the extension"

@@ -1,5 +1,8 @@
 # Changelog
 
+1.2.5
+- Added a localized icon licenses footer in Settings.
+
 1.2.4
 - Improved icon contrast and standardized the checkboxes in Settings.
 
